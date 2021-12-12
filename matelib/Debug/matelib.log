@@ -1,0 +1,16 @@
+[INFO] 12:37:11:597 matelib/(14258:14258): PID 14258: Se mandó un paquete
+[INFO] 12:37:11:600 matelib/(14258:14258): PID 14258: Se inició la conexión y se creó una instancia
+[INFO] 12:37:12:602 matelib/(14258:14258): PID 14258: Se mandó un paquete
+[INFO] 12:37:16:940 matelib/(14258:14258): PID 14258: Se quiere hacer un memalloc
+[INFO] 12:37:16:940 matelib/(14258:14258): PID 14258: Se mandó un paquete
+[INFO] 12:37:17:148 matelib/(14258:14258): PID 14258: Se quiere hacer un memwrite
+[INFO] 12:37:20:150 matelib/(14258:14258): PID 14258: Se mandó un paquete
+[INFO] 12:37:20:150 matelib/(14258:14258): PID 14258: Se cerró una instancia y la conexión
+[INFO] 12:40:28:603 matelib/(14366:14366): PID 14366: Se mandó un paquete
+[INFO] 12:40:28:605 matelib/(14366:14366): PID 14366: Se inició la conexión y se creó una instancia
+[INFO] 12:40:29:607 matelib/(14366:14366): PID 14366: Se mandó un paquete
+[INFO] 12:40:30:121 matelib/(14366:14366): PID 14366: Se quiere hacer un memalloc
+[INFO] 12:40:30:121 matelib/(14366:14366): PID 14366: Se mandó un paquete
+[INFO] 12:40:30:335 matelib/(14366:14366): PID 14366: Se quiere hacer un memwrite
+[INFO] 12:40:33:336 matelib/(14366:14366): PID 14366: Se mandó un paquete
+[INFO] 12:40:33:337 matelib/(14366:14366): PID 14366: Se cerró una instancia y la conexión

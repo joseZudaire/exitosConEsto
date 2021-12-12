@@ -1,0 +1,942 @@
+[INFO] 11:40:49:862 Servidor/(9141:9141): Creada la CPU 0
+[INFO] 11:40:49:864 Servidor/(9141:9141): Creada la CPU 1
+[INFO] 11:40:49:868 Servidor/(9141:9141): Creada la CPU 2
+[INFO] 11:40:49:868 Servidor/(9141:9141): Creada la CPU 3
+[INFO] 11:40:49:868 Servidor/(9141:9141): Creada la CPU 4
+[INFO] 11:40:49:868 Servidor/(9141:9141): Servidor listo para recibir al cliente
+[INFO] 11:40:49:868 Servidor/(9141:9141): Creado recurso de IO laguna
+[INFO] 11:40:49:868 Servidor/(9141:9141): Dispositivos IO Creados
+[INFO] 11:40:49:870 Servidor/(9141:9146): CPU Creada
+[INFO] 11:40:49:878 Servidor/(9141:9147): CPU Creada
+[INFO] 11:40:49:878 Servidor/(9141:9149): CPU Creada
+[INFO] 11:40:49:878 Servidor/(9141:9145): Iniciado el planificador de IO
+[INFO] 11:40:49:878 Servidor/(9141:9150): CPU Creada
+[INFO] 11:40:49:879 Servidor/(9141:9151): CPU Creada
+[INFO] 11:40:49:880 Servidor/(9141:9144): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 11:40:49:880 Servidor/(9141:9152): -------------------------------------------------------------
+[INFO] 11:40:49:880 Servidor/(9141:9152): -------------------------------------------------------------
+[INFO] 11:40:49:880 Servidor/(9141:9152): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 11:40:49:880 Servidor/(9141:9152): -------------------------------------------------------------
+[INFO] 11:40:49:881 Servidor/(9141:9152): -------------------------------------------------------------
+[INFO] 11:40:49:881 Servidor/(9141:9152): -------------------------------------------------------------
+[INFO] 11:40:49:882 Servidor/(9141:9143): Planificador de Largo Plazo iniciado
+[INFO] 11:40:49:884 Servidor/(9141:9154): Iniciado el hilo para finalizar procesos
+[INFO] 11:40:51:847 Servidor/(9141:9141): Se conecto un cliente!
+[INFO] 11:40:51:852 Servidor/(9141:9141): PID 9165: Llegó un carpincho
+[INFO] 11:40:51:852 Servidor/(9141:9143): Moviendo proceso con PID 9165 de NEW a READY
+[INFO] 11:40:51:853 Servidor/(9141:9143): Proceso con PID 9165 esta READY
+[INFO] 11:40:51:853 Servidor/(9141:9144): Estimacion PID 9165: 0.000000
+[INFO] 11:40:51:853 Servidor/(9141:9144): Se Paso el Proceso 9165 a EXEC para Ejecutar
+[INFO] 11:40:51:853 Servidor/(9141:9146): Iniciando Ejecucion PID 9165
+[INFO] 11:40:51:854 Servidor/(9141:9146): PID 9165: Me llegó una operación de Memoria.
+[INFO] 11:40:51:854 Servidor/(9141:9146): PID 9165: Se mandó un paquete
+[INFO] 11:40:52:699 Servidor/(9141:9141): Se conecto un cliente!
+[INFO] 11:40:52:700 Servidor/(9141:9141): PID 9166: Llegó un carpincho
+[INFO] 11:40:52:700 Servidor/(9141:9143): Moviendo proceso con PID 9166 de NEW a READY
+[INFO] 11:40:52:700 Servidor/(9141:9143): Proceso con PID 9166 esta READY
+[INFO] 11:41:06:576 Servidor/(9141:9146): PID -1296039856: Me llegó una operación de Memoria.
+[INFO] 11:47:07:583 Servidor/(10163:10163): Creada la CPU 0
+[INFO] 11:47:07:584 Servidor/(10163:10169): CPU Creada
+[INFO] 11:47:07:584 Servidor/(10163:10168): Iniciado el planificador de IO
+[INFO] 11:47:07:584 Servidor/(10163:10167): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 11:47:07:584 Servidor/(10163:10165): Planificador de Largo Plazo iniciado
+[INFO] 11:47:07:587 Servidor/(10163:10163): Creada la CPU 1
+[INFO] 11:47:07:588 Servidor/(10163:10163): Creada la CPU 2
+[INFO] 11:47:07:588 Servidor/(10163:10163): Creada la CPU 3
+[INFO] 11:47:07:588 Servidor/(10163:10163): Creada la CPU 4
+[INFO] 11:47:07:588 Servidor/(10163:10163): Servidor listo para recibir al cliente
+[INFO] 11:47:07:588 Servidor/(10163:10163): Creado recurso de IO laguna
+[INFO] 11:47:07:588 Servidor/(10163:10163): Dispositivos IO Creados
+[INFO] 11:47:07:584 Servidor/(10163:10170): Iniciado el hilo para finalizar procesos
+[INFO] 11:47:07:591 Servidor/(10163:10174): CPU Creada
+[INFO] 11:47:07:591 Servidor/(10163:10175): CPU Creada
+[INFO] 11:47:07:591 Servidor/(10163:10176): -------------------------------------------------------------
+[INFO] 11:47:07:591 Servidor/(10163:10176): -------------------------------------------------------------
+[INFO] 11:47:07:591 Servidor/(10163:10176): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 11:47:07:591 Servidor/(10163:10176): -------------------------------------------------------------
+[INFO] 11:47:07:591 Servidor/(10163:10176): -------------------------------------------------------------
+[INFO] 11:47:07:591 Servidor/(10163:10172): CPU Creada
+[INFO] 11:47:07:592 Servidor/(10163:10173): CPU Creada
+[INFO] 11:47:07:592 Servidor/(10163:10176): -------------------------------------------------------------
+[INFO] 11:47:10:235 Servidor/(10163:10163): Se conecto un cliente!
+[INFO] 11:47:10:241 Servidor/(10163:10163): PID 10181: Llegó un carpincho
+[INFO] 11:47:10:241 Servidor/(10163:10165): Moviendo proceso con PID 10181 de NEW a READY
+[INFO] 11:47:10:242 Servidor/(10163:10165): Proceso con PID 10181 esta READY
+[INFO] 11:47:10:242 Servidor/(10163:10167): Estimacion PID 10181: 0.000000
+[INFO] 11:47:10:242 Servidor/(10163:10167): Se Paso el Proceso 10181 a EXEC para Ejecutar
+[INFO] 11:47:10:242 Servidor/(10163:10169): Iniciando Ejecucion PID 10181
+[INFO] 11:47:10:242 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:10:242 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:11:063 Servidor/(10163:10163): Se conecto un cliente!
+[INFO] 11:47:11:064 Servidor/(10163:10163): PID 10182: Llegó un carpincho
+[INFO] 11:47:11:064 Servidor/(10163:10165): Moviendo proceso con PID 10182 de NEW a READY
+[INFO] 11:47:11:064 Servidor/(10163:10165): Proceso con PID 10182 esta READY
+[INFO] 11:47:11:064 Servidor/(10163:10167): Estimacion PID 10182: 0.000000
+[INFO] 11:47:11:064 Servidor/(10163:10167): Se Paso el Proceso 10182 a EXEC para Ejecutar
+[INFO] 11:47:11:064 Servidor/(10163:10172): Iniciando Ejecucion PID 10182
+[INFO] 11:47:11:064 Servidor/(10163:10172): PID 10182: Me llegó una operación de Memoria.
+[INFO] 11:47:11:064 Servidor/(10163:10172): PID 10182: Se mandó un paquete
+[INFO] 11:47:11:892 Servidor/(10163:10163): Se conecto un cliente!
+[INFO] 11:47:11:893 Servidor/(10163:10163): PID 10183: Llegó un carpincho
+[INFO] 11:47:11:893 Servidor/(10163:10165): Moviendo proceso con PID 10183 de NEW a READY
+[INFO] 11:47:11:893 Servidor/(10163:10165): Proceso con PID 10183 esta READY
+[INFO] 11:47:11:893 Servidor/(10163:10167): Estimacion PID 10183: 0.000000
+[INFO] 11:47:11:893 Servidor/(10163:10167): Se Paso el Proceso 10183 a EXEC para Ejecutar
+[INFO] 11:47:11:893 Servidor/(10163:10173): Iniciando Ejecucion PID 10183
+[INFO] 11:47:11:894 Servidor/(10163:10173): PID 10183: Me llegó una operación de Memoria.
+[INFO] 11:47:11:894 Servidor/(10163:10173): PID 10183: Se mandó un paquete
+[INFO] 11:47:12:726 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:12:727 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:13:565 Servidor/(10163:10172): PID 10182: Me llegó una operación de Memoria.
+[INFO] 11:47:13:565 Servidor/(10163:10172): PID 10182: Se mandó un paquete
+[INFO] 11:47:14:391 Servidor/(10163:10173): PID 10183: Me llegó una operación de Memoria.
+[INFO] 11:47:14:391 Servidor/(10163:10173): PID 10183: Se mandó un paquete
+[INFO] 11:47:15:218 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:15:218 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:16:066 Servidor/(10163:10172): PID 10182: Me llegó una operación de Memoria.
+[INFO] 11:47:16:066 Servidor/(10163:10172): PID 10182: Se mandó un paquete
+[INFO] 11:47:16:887 Servidor/(10163:10173): PID 10183: Me llegó una operación de Memoria.
+[INFO] 11:47:16:887 Servidor/(10163:10173): PID 10183: Se mandó un paquete
+[INFO] 11:47:17:718 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:17:718 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:18:575 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:18:575 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:19:405 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:19:405 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:20:225 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:20:225 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:21:565 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:21:566 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:22:674 Servidor/(10163:10169): PID 10181: Me llegó una operación de Memoria.
+[INFO] 11:47:22:674 Servidor/(10163:10169): PID 10181: Se mandó un paquete
+[INFO] 11:47:22:777 Servidor/(10163:10172): PID 10182: Me llegó una operación de Memoria.
+[INFO] 11:47:22:778 Servidor/(10163:10172): PID 10182: Se mandó un paquete
+[INFO] 11:48:44:985 Servidor/(10358:10358): Creada la CPU 0
+[INFO] 11:48:44:985 Servidor/(10358:10358): Creada la CPU 1
+[INFO] 11:48:44:986 Servidor/(10358:10358): Creada la CPU 2
+[INFO] 11:48:44:986 Servidor/(10358:10358): Creada la CPU 3
+[INFO] 11:48:44:986 Servidor/(10358:10358): Creada la CPU 4
+[INFO] 11:48:44:986 Servidor/(10358:10358): Servidor listo para recibir al cliente
+[INFO] 11:48:44:986 Servidor/(10358:10358): Creado recurso de IO laguna
+[INFO] 11:48:44:986 Servidor/(10358:10358): Dispositivos IO Creados
+[INFO] 11:48:44:987 Servidor/(10358:10364): CPU Creada
+[INFO] 11:48:44:987 Servidor/(10358:10363): Iniciado el planificador de IO
+[INFO] 11:48:44:987 Servidor/(10358:10365): CPU Creada
+[INFO] 11:48:44:987 Servidor/(10358:10366): CPU Creada
+[INFO] 11:48:44:987 Servidor/(10358:10362): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 11:48:44:988 Servidor/(10358:10367): CPU Creada
+[INFO] 11:48:44:988 Servidor/(10358:10368): CPU Creada
+[INFO] 11:48:44:988 Servidor/(10358:10369): -------------------------------------------------------------
+[INFO] 11:48:44:993 Servidor/(10358:10369): -------------------------------------------------------------
+[INFO] 11:48:44:993 Servidor/(10358:10369): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 11:48:44:993 Servidor/(10358:10369): -------------------------------------------------------------
+[INFO] 11:48:44:994 Servidor/(10358:10369): -------------------------------------------------------------
+[INFO] 11:48:44:994 Servidor/(10358:10369): -------------------------------------------------------------
+[INFO] 11:48:44:996 Servidor/(10358:10360): Planificador de Largo Plazo iniciado
+[INFO] 11:48:44:999 Servidor/(10358:10370): Iniciado el hilo para finalizar procesos
+[INFO] 11:49:07:570 Servidor/(10358:10358): Se conecto un cliente!
+[INFO] 11:49:07:571 Servidor/(10358:10358): PID 10400: Llegó un carpincho
+[INFO] 11:49:07:571 Servidor/(10358:10360): Moviendo proceso con PID 10400 de NEW a READY
+[INFO] 11:49:07:571 Servidor/(10358:10360): Proceso con PID 10400 esta READY
+[INFO] 11:49:07:571 Servidor/(10358:10362): Estimacion PID 10400: 0.000000
+[INFO] 11:49:07:571 Servidor/(10358:10362): Se Paso el Proceso 10400 a EXEC para Ejecutar
+[INFO] 11:49:07:571 Servidor/(10358:10364): Iniciando Ejecucion PID 10400
+[INFO] 11:49:07:575 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:07:575 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:08:709 Servidor/(10358:10358): Se conecto un cliente!
+[INFO] 11:49:08:709 Servidor/(10358:10358): PID 10401: Llegó un carpincho
+[INFO] 11:49:08:709 Servidor/(10358:10360): Moviendo proceso con PID 10401 de NEW a READY
+[INFO] 11:49:08:709 Servidor/(10358:10360): Proceso con PID 10401 esta READY
+[INFO] 11:49:08:709 Servidor/(10358:10362): Estimacion PID 10401: 0.000000
+[INFO] 11:49:08:709 Servidor/(10358:10362): Se Paso el Proceso 10401 a EXEC para Ejecutar
+[INFO] 11:49:08:709 Servidor/(10358:10365): Iniciando Ejecucion PID 10401
+[INFO] 11:49:08:710 Servidor/(10358:10365): PID 10401: Me llegó una operación de Memoria.
+[INFO] 11:49:08:710 Servidor/(10358:10365): PID 10401: Se mandó un paquete
+[INFO] 11:49:09:541 Servidor/(10358:10358): Se conecto un cliente!
+[INFO] 11:49:09:541 Servidor/(10358:10358): PID 10402: Llegó un carpincho
+[INFO] 11:49:09:541 Servidor/(10358:10360): Moviendo proceso con PID 10402 de NEW a READY
+[INFO] 11:49:09:541 Servidor/(10358:10360): Proceso con PID 10402 esta READY
+[INFO] 11:49:09:541 Servidor/(10358:10362): Estimacion PID 10402: 0.000000
+[INFO] 11:49:09:542 Servidor/(10358:10362): Se Paso el Proceso 10402 a EXEC para Ejecutar
+[INFO] 11:49:09:542 Servidor/(10358:10366): Iniciando Ejecucion PID 10402
+[INFO] 11:49:09:542 Servidor/(10358:10366): PID 10402: Me llegó una operación de Memoria.
+[INFO] 11:49:09:542 Servidor/(10358:10366): PID 10402: Se mandó un paquete
+[INFO] 11:49:10:371 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:10:371 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:11:199 Servidor/(10358:10365): PID 10401: Me llegó una operación de Memoria.
+[INFO] 11:49:11:199 Servidor/(10358:10365): PID 10401: Se mandó un paquete
+[INFO] 11:49:12:185 Servidor/(10358:10366): PID 10402: Me llegó una operación de Memoria.
+[INFO] 11:49:12:185 Servidor/(10358:10366): PID 10402: Se mandó un paquete
+[INFO] 11:49:13:009 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:13:009 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:13:827 Servidor/(10358:10365): PID 10401: Me llegó una operación de Memoria.
+[INFO] 11:49:13:827 Servidor/(10358:10365): PID 10401: Se mandó un paquete
+[INFO] 11:49:14:649 Servidor/(10358:10366): PID 10402: Me llegó una operación de Memoria.
+[INFO] 11:49:14:649 Servidor/(10358:10366): PID 10402: Se mandó un paquete
+[INFO] 11:49:15:489 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:15:489 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:16:315 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:16:315 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:17:144 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:17:144 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:17:989 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:17:989 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:19:339 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:19:339 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:20:447 Servidor/(10358:10364): PID 10400: Me llegó una operación de Memoria.
+[INFO] 11:49:20:447 Servidor/(10358:10364): PID 10400: Se mandó un paquete
+[INFO] 11:49:20:551 Servidor/(10358:10365): PID 10401: Me llegó una operación de Memoria.
+[INFO] 11:49:20:551 Servidor/(10358:10365): PID 10401: Se mandó un paquete
+[INFO] 11:54:11:731 Servidor/(10897:10897): Creada la CPU 0
+[INFO] 11:54:11:746 Servidor/(10897:10897): Creada la CPU 1
+[INFO] 11:54:11:746 Servidor/(10897:10897): Creada la CPU 2
+[INFO] 11:54:11:746 Servidor/(10897:10897): Creada la CPU 3
+[INFO] 11:54:11:746 Servidor/(10897:10897): Creada la CPU 4
+[INFO] 11:54:11:746 Servidor/(10897:10897): Servidor listo para recibir al cliente
+[INFO] 11:54:11:747 Servidor/(10897:10897): Creado recurso de IO laguna
+[INFO] 11:54:11:747 Servidor/(10897:10897): Dispositivos IO Creados
+[INFO] 11:54:11:747 Servidor/(10897:10903): CPU Creada
+[INFO] 11:54:11:748 Servidor/(10897:10902): Iniciado el planificador de IO
+[INFO] 11:54:11:748 Servidor/(10897:10904): CPU Creada
+[INFO] 11:54:11:755 Servidor/(10897:10901): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 11:54:11:755 Servidor/(10897:10905): CPU Creada
+[INFO] 11:54:11:755 Servidor/(10897:10906): CPU Creada
+[INFO] 11:54:11:755 Servidor/(10897:10907): CPU Creada
+[INFO] 11:54:11:756 Servidor/(10897:10899): Planificador de Largo Plazo iniciado
+[INFO] 11:54:11:756 Servidor/(10897:10908): -------------------------------------------------------------
+[INFO] 11:54:11:756 Servidor/(10897:10909): Iniciado el hilo para finalizar procesos
+[INFO] 11:54:11:756 Servidor/(10897:10908): -------------------------------------------------------------
+[INFO] 11:54:11:756 Servidor/(10897:10908): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 11:54:11:756 Servidor/(10897:10908): -------------------------------------------------------------
+[INFO] 11:54:11:756 Servidor/(10897:10908): -------------------------------------------------------------
+[INFO] 11:54:11:756 Servidor/(10897:10908): -------------------------------------------------------------
+[INFO] 11:54:13:789 Servidor/(10897:10897): Se conecto un cliente!
+[INFO] 11:54:13:790 Servidor/(10897:10897): PID 10911: Llegó un carpincho
+[INFO] 11:54:13:790 Servidor/(10897:10899): Moviendo proceso con PID 10911 de NEW a READY
+[INFO] 11:54:13:790 Servidor/(10897:10899): Proceso con PID 10911 esta READY
+[INFO] 11:54:13:790 Servidor/(10897:10901): Estimacion PID 10911: 0.000000
+[INFO] 11:54:13:790 Servidor/(10897:10901): Se Paso el Proceso 10911 a EXEC para Ejecutar
+[INFO] 11:54:13:790 Servidor/(10897:10903): Iniciando Ejecucion PID 10911
+[INFO] 11:54:13:791 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:13:791 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:14:624 Servidor/(10897:10897): Se conecto un cliente!
+[INFO] 11:54:14:624 Servidor/(10897:10897): PID 10912: Llegó un carpincho
+[INFO] 11:54:14:624 Servidor/(10897:10899): Moviendo proceso con PID 10912 de NEW a READY
+[INFO] 11:54:14:624 Servidor/(10897:10899): Proceso con PID 10912 esta READY
+[INFO] 11:54:14:625 Servidor/(10897:10901): Estimacion PID 10912: 0.000000
+[INFO] 11:54:14:625 Servidor/(10897:10901): Se Paso el Proceso 10912 a EXEC para Ejecutar
+[INFO] 11:54:14:625 Servidor/(10897:10904): Iniciando Ejecucion PID 10912
+[INFO] 11:54:14:625 Servidor/(10897:10904): PID 10912: Me llegó una operación de Memoria.
+[INFO] 11:54:14:625 Servidor/(10897:10904): PID 10912: Se mandó un paquete
+[INFO] 11:54:15:465 Servidor/(10897:10897): Se conecto un cliente!
+[INFO] 11:54:15:465 Servidor/(10897:10897): PID 10913: Llegó un carpincho
+[INFO] 11:54:15:465 Servidor/(10897:10899): Moviendo proceso con PID 10913 de NEW a READY
+[INFO] 11:54:15:465 Servidor/(10897:10899): Proceso con PID 10913 esta READY
+[INFO] 11:54:15:465 Servidor/(10897:10901): Estimacion PID 10913: 0.000000
+[INFO] 11:54:15:465 Servidor/(10897:10901): Se Paso el Proceso 10913 a EXEC para Ejecutar
+[INFO] 11:54:15:465 Servidor/(10897:10905): Iniciando Ejecucion PID 10913
+[INFO] 11:54:15:465 Servidor/(10897:10905): PID 10913: Me llegó una operación de Memoria.
+[INFO] 11:54:15:465 Servidor/(10897:10905): PID 10913: Se mandó un paquete
+[INFO] 11:54:16:315 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:16:315 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:17:132 Servidor/(10897:10904): PID 10912: Me llegó una operación de Memoria.
+[INFO] 11:54:17:132 Servidor/(10897:10904): PID 10912: Se mandó un paquete
+[INFO] 11:54:17:957 Servidor/(10897:10905): PID 10913: Me llegó una operación de Memoria.
+[INFO] 11:54:17:957 Servidor/(10897:10905): PID 10913: Se mandó un paquete
+[INFO] 11:54:18:777 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:18:777 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:19:606 Servidor/(10897:10904): PID 10912: Me llegó una operación de Memoria.
+[INFO] 11:54:19:606 Servidor/(10897:10904): PID 10912: Se mandó un paquete
+[INFO] 11:54:20:430 Servidor/(10897:10905): PID 10913: Me llegó una operación de Memoria.
+[INFO] 11:54:20:430 Servidor/(10897:10905): PID 10913: Se mandó un paquete
+[INFO] 11:54:21:260 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:21:260 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:22:081 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:22:081 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:22:919 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:22:919 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:23:751 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:23:751 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:25:096 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:25:096 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:26:206 Servidor/(10897:10903): PID 10911: Me llegó una operación de Memoria.
+[INFO] 11:54:26:206 Servidor/(10897:10903): PID 10911: Se mandó un paquete
+[INFO] 11:54:26:312 Servidor/(10897:10904): PID 10912: Me llegó una operación de Memoria.
+[INFO] 11:54:26:312 Servidor/(10897:10904): PID 10912: Se mandó un paquete
+[INFO] 12:20:11:291 Servidor/(13505:13505): Creada la CPU 0
+[INFO] 12:20:11:294 Servidor/(13505:13505): Servidor listo para recibir al cliente
+[INFO] 12:20:11:295 Servidor/(13505:13505): Creado recurso de IO pelopincho
+[INFO] 12:20:11:296 Servidor/(13505:13505): Dispositivos IO Creados
+[INFO] 12:20:11:292 Servidor/(13505:13511): CPU Creada
+[INFO] 12:20:11:292 Servidor/(13505:13510): Iniciado el planificador de IO
+[INFO] 12:20:11:292 Servidor/(13505:13509): Algoritmo HRRN Iniciado
+[INFO] 12:20:11:299 Servidor/(13505:13507): Planificador de Largo Plazo iniciado
+[INFO] 12:20:11:299 Servidor/(13505:13513): -------------------------------------------------------------
+[INFO] 12:20:11:299 Servidor/(13505:13513): -------------------------------------------------------------
+[INFO] 12:20:11:299 Servidor/(13505:13513): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 12:20:11:300 Servidor/(13505:13513): -------------------------------------------------------------
+[INFO] 12:20:11:301 Servidor/(13505:13513): -------------------------------------------------------------
+[INFO] 12:20:11:311 Servidor/(13505:13514): Iniciado el hilo para finalizar procesos
+[INFO] 12:20:11:311 Servidor/(13505:13513): -------------------------------------------------------------
+[INFO] 12:20:40:523 Servidor/(13505:13505): Se conecto un cliente!
+[INFO] 12:20:40:537 Servidor/(13505:13505): PID 13552: Llegó un carpincho
+[INFO] 12:20:40:538 Servidor/(13505:13507): Moviendo proceso con PID 13552 de NEW a READY
+[INFO] 12:20:40:538 Servidor/(13505:13507): Proceso con PID 13552 esta READY
+[INFO] 12:20:40:538 Servidor/(13505:13509): Se Paso el Carpincho 13552 a EXECUTE
+[INFO] 12:20:40:539 Servidor/(13505:13505): Se conecto un cliente!
+[INFO] 12:20:40:539 Servidor/(13505:13505): PID 13553: Llegó un carpincho
+[INFO] 12:20:40:543 Servidor/(13505:13505): Se conecto un cliente!
+[INFO] 12:20:40:543 Servidor/(13505:13507): Moviendo proceso con PID 13553 de NEW a READY
+[INFO] 12:20:40:543 Servidor/(13505:13505): PID 13554: Llegó un carpincho
+[INFO] 12:20:40:543 Servidor/(13505:13507): Proceso con PID 13553 esta READY
+[INFO] 12:20:40:543 Servidor/(13505:13507): Moviendo proceso con PID 13554 de NEW a READY
+[INFO] 12:20:40:543 Servidor/(13505:13507): Proceso con PID 13554 esta READY
+[INFO] 12:21:46:852 Servidor/(13662:13662): Creada la CPU 0
+[INFO] 12:21:46:863 Servidor/(13662:13662): Servidor listo para recibir al cliente
+[INFO] 12:21:46:863 Servidor/(13662:13662): Creado recurso de IO pelopincho
+[INFO] 12:21:46:863 Servidor/(13662:13662): Dispositivos IO Creados
+[INFO] 12:21:46:864 Servidor/(13662:13668): CPU Creada
+[INFO] 12:21:46:864 Servidor/(13662:13667): Iniciado el planificador de IO
+[INFO] 12:21:46:864 Servidor/(13662:13666): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 12:21:46:868 Servidor/(13662:13670): -------------------------------------------------------------
+[INFO] 12:21:46:869 Servidor/(13662:13670): -------------------------------------------------------------
+[INFO] 12:21:46:869 Servidor/(13662:13670): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 12:21:46:869 Servidor/(13662:13670): -------------------------------------------------------------
+[INFO] 12:21:46:869 Servidor/(13662:13670): -------------------------------------------------------------
+[INFO] 12:21:46:869 Servidor/(13662:13670): -------------------------------------------------------------
+[INFO] 12:21:46:870 Servidor/(13662:13664): Planificador de Largo Plazo iniciado
+[INFO] 12:21:46:871 Servidor/(13662:13671): Iniciado el hilo para finalizar procesos
+[INFO] 12:21:50:103 Servidor/(13662:13662): Se conecto un cliente!
+[INFO] 12:21:50:104 Servidor/(13662:13662): PID 13673: Llegó un carpincho
+[INFO] 12:21:50:104 Servidor/(13662:13664): Moviendo proceso con PID 13673 de NEW a READY
+[INFO] 12:21:50:104 Servidor/(13662:13664): Proceso con PID 13673 esta READY
+[INFO] 12:21:50:104 Servidor/(13662:13666): Estimacion PID 13673: 1400.000000
+[INFO] 12:21:50:104 Servidor/(13662:13666): Se Paso el Proceso 13673 a EXEC para Ejecutar
+[INFO] 12:21:50:104 Servidor/(13662:13668): Iniciando Ejecucion PID 13673
+[INFO] 12:21:50:105 Servidor/(13662:13662): Se conecto un cliente!
+[INFO] 12:21:50:105 Servidor/(13662:13662): PID 13674: Llegó un carpincho
+[INFO] 12:21:50:105 Servidor/(13662:13664): Moviendo proceso con PID 13674 de NEW a READY
+[INFO] 12:21:50:105 Servidor/(13662:13664): Proceso con PID 13674 esta READY
+[INFO] 12:21:50:105 Servidor/(13662:13666): Estimacion PID 13674: 1400.000000
+[INFO] 12:21:50:112 Servidor/(13662:13662): Se conecto un cliente!
+[INFO] 12:21:50:112 Servidor/(13662:13662): PID 13675: Llegó un carpincho
+[INFO] 12:21:50:112 Servidor/(13662:13664): Moviendo proceso con PID 13675 de NEW a READY
+[INFO] 12:21:50:112 Servidor/(13662:13664): Proceso con PID 13675 esta READY
+[INFO] 12:21:52:115 Servidor/(13662:13668): PID 13673: Me llegó una operación de IO.
+[INFO] 12:21:52:115 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:21:52:115 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:21:52:115 Servidor/(13662:13667): PID 13673: Comienzo Rafaga IO
+[INFO] 12:21:52:115 Servidor/(13662:13668): Iniciando Ejecucion PID 13674
+[INFO] 12:21:52:115 Servidor/(13662:13668): PID 13674: Me llegó una operación de IO.
+[INFO] 12:21:52:115 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:21:52:115 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:21:52:116 Servidor/(13662:13666): Se Paso el Proceso 13674 a EXEC para Ejecutar
+[INFO] 12:21:52:116 Servidor/(13662:13666): Estimacion PID 13675: 1400.000000
+[INFO] 12:21:52:116 Servidor/(13662:13668): Iniciando Ejecucion PID 13675
+[INFO] 12:21:52:117 Servidor/(13662:13666): Se Paso el Proceso 13675 a EXEC para Ejecutar
+[INFO] 12:21:54:116 Servidor/(13662:13667): PID 13673: Fin Rafaga IO
+[INFO] 12:21:54:116 Servidor/(13662:13667): PID 13673: Se desbloqueo
+[INFO] 12:21:54:116 Servidor/(13662:13667): Estimacion PID 13673: 980.000000
+[INFO] 12:21:54:116 Servidor/(13662:13667): PID 13674: Comienzo Rafaga IO
+[INFO] 12:21:56:117 Servidor/(13662:13667): PID 13674: Fin Rafaga IO
+[INFO] 12:21:56:118 Servidor/(13662:13667): PID 13674: Se desbloqueo
+[INFO] 12:21:56:118 Servidor/(13662:13667): Estimacion PID 13674: 980.000000
+[INFO] 12:22:00:116 Servidor/(13662:13668): PID 13675: Me llegó una operación de IO.
+[INFO] 12:22:00:116 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:00:116 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:00:119 Servidor/(13662:13667): PID 13675: Comienzo Rafaga IO
+[INFO] 12:22:00:120 Servidor/(13662:13668): Iniciando Ejecucion PID 13673
+[INFO] 12:22:00:120 Servidor/(13662:13666): Se Paso el Proceso 13673 a EXEC para Ejecutar
+[INFO] 12:22:02:119 Servidor/(13662:13667): PID 13675: Fin Rafaga IO
+[INFO] 12:22:02:119 Servidor/(13662:13667): PID 13675: Se desbloqueo
+[INFO] 12:22:02:119 Servidor/(13662:13667): Estimacion PID 13675: 980.000000
+[INFO] 12:22:02:121 Servidor/(13662:13668): PID 13673: Me llegó una operación de IO.
+[INFO] 12:22:02:121 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:02:121 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:02:121 Servidor/(13662:13667): PID 13673: Comienzo Rafaga IO
+[INFO] 12:22:02:121 Servidor/(13662:13668): Iniciando Ejecucion PID 13674
+[INFO] 12:22:02:121 Servidor/(13662:13666): Se Paso el Proceso 13674 a EXEC para Ejecutar
+[INFO] 12:22:02:123 Servidor/(13662:13666): Estimacion PID 13675: 980.000000
+[INFO] 12:22:04:122 Servidor/(13662:13667): PID 13673: Fin Rafaga IO
+[INFO] 12:22:04:122 Servidor/(13662:13667): PID 13673: Se desbloqueo
+[INFO] 12:22:04:122 Servidor/(13662:13667): Estimacion PID 13673: 686.000000
+[INFO] 12:22:04:123 Servidor/(13662:13668): PID 13674: Me llegó una operación de IO.
+[INFO] 12:22:04:123 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:04:123 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:04:123 Servidor/(13662:13667): PID 13674: Comienzo Rafaga IO
+[INFO] 12:22:04:123 Servidor/(13662:13668): Iniciando Ejecucion PID 13675
+[INFO] 12:22:04:123 Servidor/(13662:13666): Se Paso el Proceso 13675 a EXEC para Ejecutar
+[INFO] 12:22:06:123 Servidor/(13662:13667): PID 13674: Fin Rafaga IO
+[INFO] 12:22:06:124 Servidor/(13662:13667): PID 13674: Se desbloqueo
+[INFO] 12:22:06:124 Servidor/(13662:13667): Estimacion PID 13674: 686.000000
+[INFO] 12:22:14:130 Servidor/(13662:13668): PID 13675: Me llegó una operación de IO.
+[INFO] 12:22:14:131 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:14:131 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:14:131 Servidor/(13662:13667): PID 13675: Comienzo Rafaga IO
+[INFO] 12:22:14:135 Servidor/(13662:13668): Iniciando Ejecucion PID 13673
+[INFO] 12:22:14:137 Servidor/(13662:13666): Se Paso el Proceso 13673 a EXEC para Ejecutar
+[INFO] 12:22:16:133 Servidor/(13662:13667): PID 13675: Fin Rafaga IO
+[INFO] 12:22:16:134 Servidor/(13662:13667): PID 13675: Se desbloqueo
+[INFO] 12:22:16:134 Servidor/(13662:13667): Estimacion PID 13675: 686.000000
+[INFO] 12:22:16:137 Servidor/(13662:13668): PID 13673: Me llegó una operación de IO.
+[INFO] 12:22:16:137 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:16:137 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:16:137 Servidor/(13662:13667): PID 13673: Comienzo Rafaga IO
+[INFO] 12:22:16:138 Servidor/(13662:13668): Iniciando Ejecucion PID 13674
+[INFO] 12:22:16:138 Servidor/(13662:13666): Se Paso el Proceso 13674 a EXEC para Ejecutar
+[INFO] 12:22:18:138 Servidor/(13662:13667): PID 13673: Fin Rafaga IO
+[INFO] 12:22:18:138 Servidor/(13662:13667): PID 13673: Se desbloqueo
+[INFO] 12:22:18:138 Servidor/(13662:13667): Estimacion PID 13673: 480.199982
+[INFO] 12:22:18:139 Servidor/(13662:13668): PID 13674: Me llegó una operación de IO.
+[INFO] 12:22:18:139 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:18:139 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:18:139 Servidor/(13662:13667): PID 13674: Comienzo Rafaga IO
+[INFO] 12:22:18:139 Servidor/(13662:13668): Iniciando Ejecucion PID 13675
+[INFO] 12:22:18:139 Servidor/(13662:13666): Se Paso el Proceso 13675 a EXEC para Ejecutar
+[INFO] 12:22:20:140 Servidor/(13662:13667): PID 13674: Fin Rafaga IO
+[INFO] 12:22:20:140 Servidor/(13662:13667): PID 13674: Se desbloqueo
+[INFO] 12:22:20:141 Servidor/(13662:13667): Estimacion PID 13674: 480.199982
+[INFO] 12:22:28:150 Servidor/(13662:13668): PID 13675: Me llegó una operación de IO.
+[INFO] 12:22:28:150 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:28:150 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:28:152 Servidor/(13662:13667): PID 13675: Comienzo Rafaga IO
+[INFO] 12:22:28:155 Servidor/(13662:13668): Iniciando Ejecucion PID 13673
+[INFO] 12:22:28:156 Servidor/(13662:13666): Se Paso el Proceso 13673 a EXEC para Ejecutar
+[INFO] 12:22:30:152 Servidor/(13662:13667): PID 13675: Fin Rafaga IO
+[INFO] 12:22:30:153 Servidor/(13662:13667): PID 13675: Se desbloqueo
+[INFO] 12:22:30:153 Servidor/(13662:13667): Estimacion PID 13675: 480.199982
+[INFO] 12:22:30:157 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:30:157 Servidor/(13662:13671): PID 13673: Se mandó un paquete
+[INFO] 12:22:30:157 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:30:157 Servidor/(13662:13671): Finalizando proceso PID: 13673
+[INFO] 12:22:30:160 Servidor/(13662:13668): Iniciando Ejecucion PID 13674
+[INFO] 12:22:30:160 Servidor/(13662:13666): Se Paso el Proceso 13674 a EXEC para Ejecutar
+[INFO] 12:22:32:161 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:32:161 Servidor/(13662:13671): PID 13674: Se mandó un paquete
+[INFO] 12:22:32:161 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:32:161 Servidor/(13662:13671): Finalizando proceso PID: 13674
+[INFO] 12:22:32:163 Servidor/(13662:13668): Iniciando Ejecucion PID 13675
+[INFO] 12:22:32:164 Servidor/(13662:13666): Se Paso el Proceso 13675 a EXEC para Ejecutar
+[INFO] 12:22:42:168 Servidor/(13662:13668): CPU en estado FREE
+[INFO] 12:22:42:168 Servidor/(13662:13671): PID 13675: Se mandó un paquete
+[INFO] 12:22:42:168 Servidor/(13662:13665): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:22:42:172 Servidor/(13662:13671): Finalizando proceso PID: 13675
+[INFO] 12:46:20:377 Servidor/(15745:15745): Creada la CPU 0
+[INFO] 12:46:20:377 Servidor/(15745:15745): Servidor listo para recibir al cliente
+[INFO] 12:46:20:378 Servidor/(15745:15745): Creado recurso de IO pelopincho
+[INFO] 12:46:20:378 Servidor/(15745:15745): Dispositivos IO Creados
+[INFO] 12:46:20:378 Servidor/(15745:15751): CPU Creada
+[INFO] 12:46:20:383 Servidor/(15745:15750): Iniciado el planificador de IO
+[INFO] 12:46:20:389 Servidor/(15745:15753): -------------------------------------------------------------
+[INFO] 12:46:20:389 Servidor/(15745:15749): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 12:46:20:390 Servidor/(15745:15753): -------------------------------------------------------------
+[INFO] 12:46:20:390 Servidor/(15745:15753): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 12:46:20:390 Servidor/(15745:15753): -------------------------------------------------------------
+[INFO] 12:46:20:390 Servidor/(15745:15753): -------------------------------------------------------------
+[INFO] 12:46:20:390 Servidor/(15745:15753): -------------------------------------------------------------
+[INFO] 12:46:20:391 Servidor/(15745:15747): Planificador de Largo Plazo iniciado
+[INFO] 12:46:20:396 Servidor/(15745:15755): Iniciado el hilo para finalizar procesos
+[INFO] 12:46:24:168 Servidor/(15745:15745): Se conecto un cliente!
+[INFO] 12:46:24:170 Servidor/(15745:15745): PID 15763: Llegó un carpincho
+[INFO] 12:46:24:171 Servidor/(15745:15747): Moviendo proceso con PID 15763 de NEW a READY
+[INFO] 12:46:24:171 Servidor/(15745:15747): Proceso con PID 15763 esta READY
+[INFO] 12:46:24:171 Servidor/(15745:15749): Estimacion PID 15763: 1400.000000
+[INFO] 12:46:24:171 Servidor/(15745:15749): Se Paso el Proceso 15763 a EXEC para Ejecutar
+[INFO] 12:46:24:171 Servidor/(15745:15751): Iniciando Ejecucion PID 15763
+[INFO] 12:46:24:171 Servidor/(15745:15745): Se conecto un cliente!
+[INFO] 12:46:24:175 Servidor/(15745:15745): PID 15764: Llegó un carpincho
+[INFO] 12:46:24:175 Servidor/(15745:15747): Moviendo proceso con PID 15764 de NEW a READY
+[INFO] 12:46:24:175 Servidor/(15745:15747): Proceso con PID 15764 esta READY
+[INFO] 12:46:24:175 Servidor/(15745:15749): Estimacion PID 15764: 1400.000000
+[INFO] 12:46:24:179 Servidor/(15745:15745): Se conecto un cliente!
+[INFO] 12:46:24:180 Servidor/(15745:15745): PID 15765: Llegó un carpincho
+[INFO] 12:46:24:181 Servidor/(15745:15747): Moviendo proceso con PID 15765 de NEW a READY
+[INFO] 12:46:24:181 Servidor/(15745:15747): Proceso con PID 15765 esta READY
+[INFO] 12:46:26:184 Servidor/(15745:15751): PID 15763: Me llegó una operación de IO.
+[INFO] 12:46:26:185 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:26:185 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:26:185 Servidor/(15745:15750): PID 15763: Comienzo Rafaga IO
+[INFO] 12:46:26:185 Servidor/(15745:15751): Iniciando Ejecucion PID 15764
+[INFO] 12:46:26:185 Servidor/(15745:15751): PID 15764: Me llegó una operación de IO.
+[INFO] 12:46:26:185 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:26:185 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:26:185 Servidor/(15745:15749): Se Paso el Proceso 15764 a EXEC para Ejecutar
+[INFO] 12:46:26:186 Servidor/(15745:15749): Estimacion PID 15765: 1400.000000
+[INFO] 12:46:26:186 Servidor/(15745:15751): Iniciando Ejecucion PID 15765
+[INFO] 12:46:26:186 Servidor/(15745:15749): Se Paso el Proceso 15765 a EXEC para Ejecutar
+[INFO] 12:46:28:185 Servidor/(15745:15750): PID 15763: Fin Rafaga IO
+[INFO] 12:46:28:185 Servidor/(15745:15750): PID 15763: Se desbloqueo
+[INFO] 12:46:28:186 Servidor/(15745:15750): Estimacion PID 15763: 980.000000
+[INFO] 12:46:28:186 Servidor/(15745:15750): PID 15764: Comienzo Rafaga IO
+[INFO] 12:46:30:187 Servidor/(15745:15750): PID 15764: Fin Rafaga IO
+[INFO] 12:46:30:187 Servidor/(15745:15750): PID 15764: Se desbloqueo
+[INFO] 12:46:30:187 Servidor/(15745:15750): Estimacion PID 15764: 980.000000
+[INFO] 12:46:34:188 Servidor/(15745:15751): PID 15765: Me llegó una operación de IO.
+[INFO] 12:46:34:188 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:34:188 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:34:195 Servidor/(15745:15750): PID 15765: Comienzo Rafaga IO
+[INFO] 12:46:34:196 Servidor/(15745:15751): Iniciando Ejecucion PID 15763
+[INFO] 12:46:34:196 Servidor/(15745:15749): Se Paso el Proceso 15763 a EXEC para Ejecutar
+[INFO] 12:46:36:196 Servidor/(15745:15750): PID 15765: Fin Rafaga IO
+[INFO] 12:46:36:196 Servidor/(15745:15750): PID 15765: Se desbloqueo
+[INFO] 12:46:36:196 Servidor/(15745:15750): Estimacion PID 15765: 980.000000
+[INFO] 12:46:36:197 Servidor/(15745:15751): PID 15763: Me llegó una operación de IO.
+[INFO] 12:46:36:197 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:36:197 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:36:197 Servidor/(15745:15750): PID 15763: Comienzo Rafaga IO
+[INFO] 12:46:36:197 Servidor/(15745:15751): Iniciando Ejecucion PID 15764
+[INFO] 12:46:36:197 Servidor/(15745:15749): Se Paso el Proceso 15764 a EXEC para Ejecutar
+[INFO] 12:46:38:197 Servidor/(15745:15750): PID 15763: Fin Rafaga IO
+[INFO] 12:46:38:198 Servidor/(15745:15750): PID 15763: Se desbloqueo
+[INFO] 12:46:38:198 Servidor/(15745:15750): Estimacion PID 15763: 686.000000
+[INFO] 12:46:38:198 Servidor/(15745:15751): PID 15764: Me llegó una operación de IO.
+[INFO] 12:46:38:198 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:38:198 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:38:199 Servidor/(15745:15750): PID 15764: Comienzo Rafaga IO
+[INFO] 12:46:38:199 Servidor/(15745:15751): Iniciando Ejecucion PID 15765
+[INFO] 12:46:38:199 Servidor/(15745:15749): Se Paso el Proceso 15765 a EXEC para Ejecutar
+[INFO] 12:46:40:200 Servidor/(15745:15750): PID 15764: Fin Rafaga IO
+[INFO] 12:46:40:200 Servidor/(15745:15750): PID 15764: Se desbloqueo
+[INFO] 12:46:40:200 Servidor/(15745:15750): Estimacion PID 15764: 686.000000
+[INFO] 12:46:48:203 Servidor/(15745:15751): PID 15765: Me llegó una operación de IO.
+[INFO] 12:46:48:203 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:48:203 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:48:207 Servidor/(15745:15750): PID 15765: Comienzo Rafaga IO
+[INFO] 12:46:48:207 Servidor/(15745:15751): Iniciando Ejecucion PID 15763
+[INFO] 12:46:48:208 Servidor/(15745:15749): Se Paso el Proceso 15763 a EXEC para Ejecutar
+[INFO] 12:46:50:208 Servidor/(15745:15750): PID 15765: Fin Rafaga IO
+[INFO] 12:46:50:208 Servidor/(15745:15750): PID 15765: Se desbloqueo
+[INFO] 12:46:50:208 Servidor/(15745:15750): Estimacion PID 15765: 686.000000
+[INFO] 12:46:50:208 Servidor/(15745:15751): PID 15763: Me llegó una operación de IO.
+[INFO] 12:46:50:208 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:50:208 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:50:209 Servidor/(15745:15750): PID 15763: Comienzo Rafaga IO
+[INFO] 12:46:50:209 Servidor/(15745:15751): Iniciando Ejecucion PID 15764
+[INFO] 12:46:50:209 Servidor/(15745:15749): Se Paso el Proceso 15764 a EXEC para Ejecutar
+[INFO] 12:46:52:209 Servidor/(15745:15750): PID 15763: Fin Rafaga IO
+[INFO] 12:46:52:210 Servidor/(15745:15750): PID 15763: Se desbloqueo
+[INFO] 12:46:52:210 Servidor/(15745:15750): Estimacion PID 15763: 480.199982
+[INFO] 12:46:52:210 Servidor/(15745:15751): PID 15764: Me llegó una operación de IO.
+[INFO] 12:46:52:210 Servidor/(15745:15751): CPU en estado FREE
+[INFO] 12:46:52:210 Servidor/(15745:15748): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:46:52:211 Servidor/(15745:15750): PID 15764: Comienzo Rafaga IO
+[INFO] 12:46:52:211 Servidor/(15745:15751): Iniciando Ejecucion PID 15765
+[INFO] 12:46:52:211 Servidor/(15745:15749): Se Paso el Proceso 15765 a EXEC para Ejecutar
+[INFO] 12:46:54:212 Servidor/(15745:15750): PID 15764: Fin Rafaga IO
+[INFO] 12:46:54:212 Servidor/(15745:15750): PID 15764: Se desbloqueo
+[INFO] 12:46:54:212 Servidor/(15745:15750): Estimacion PID 15764: 480.199982
+[INFO] 12:46:56:600 Servidor/(15745:15751): PID -1270869544: Me llegó una operación de Memoria.
+[INFO] 12:49:09:878 Servidor/(16047:16047): Creada la CPU 0
+[INFO] 12:49:09:890 Servidor/(16047:16047): Servidor listo para recibir al cliente
+[INFO] 12:49:09:890 Servidor/(16047:16047): Creado recurso de IO pelopincho
+[INFO] 12:49:09:890 Servidor/(16047:16047): Dispositivos IO Creados
+[INFO] 12:49:09:890 Servidor/(16047:16055): -------------------------------------------------------------
+[INFO] 12:49:09:891 Servidor/(16047:16053): CPU Creada
+[INFO] 12:49:09:891 Servidor/(16047:16055): -------------------------------------------------------------
+[INFO] 12:49:09:891 Servidor/(16047:16055): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 12:49:09:891 Servidor/(16047:16052): Iniciado el planificador de IO
+[INFO] 12:49:09:891 Servidor/(16047:16055): -------------------------------------------------------------
+[INFO] 12:49:09:891 Servidor/(16047:16055): -------------------------------------------------------------
+[INFO] 12:49:09:892 Servidor/(16047:16055): -------------------------------------------------------------
+[INFO] 12:49:09:892 Servidor/(16047:16051): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 12:49:09:893 Servidor/(16047:16049): Planificador de Largo Plazo iniciado
+[INFO] 12:49:09:893 Servidor/(16047:16056): Iniciado el hilo para finalizar procesos
+[INFO] 12:49:12:363 Servidor/(16047:16047): Se conecto un cliente!
+[INFO] 12:49:12:363 Servidor/(16047:16047): PID 16058: Llegó un carpincho
+[INFO] 12:49:12:363 Servidor/(16047:16049): Moviendo proceso con PID 16058 de NEW a READY
+[INFO] 12:49:12:363 Servidor/(16047:16049): Proceso con PID 16058 esta READY
+[INFO] 12:49:12:363 Servidor/(16047:16051): Estimacion PID 16058: 1400.000000
+[INFO] 12:49:12:364 Servidor/(16047:16051): Se Paso el Proceso 16058 a EXEC para Ejecutar
+[INFO] 12:49:12:364 Servidor/(16047:16053): Iniciando Ejecucion PID 16058
+[INFO] 12:49:12:364 Servidor/(16047:16047): Se conecto un cliente!
+[INFO] 12:49:12:364 Servidor/(16047:16047): PID 16059: Llegó un carpincho
+[INFO] 12:49:12:364 Servidor/(16047:16049): Moviendo proceso con PID 16059 de NEW a READY
+[INFO] 12:49:12:364 Servidor/(16047:16049): Proceso con PID 16059 esta READY
+[INFO] 12:49:12:364 Servidor/(16047:16051): Estimacion PID 16059: 1400.000000
+[INFO] 12:49:12:368 Servidor/(16047:16047): Se conecto un cliente!
+[INFO] 12:49:12:369 Servidor/(16047:16047): PID 16060: Llegó un carpincho
+[INFO] 12:49:12:369 Servidor/(16047:16049): Moviendo proceso con PID 16060 de NEW a READY
+[INFO] 12:49:12:369 Servidor/(16047:16049): Proceso con PID 16060 esta READY
+[INFO] 12:49:14:376 Servidor/(16047:16053): PID 16058: Me llegó una operación de IO.
+[INFO] 12:49:14:376 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:14:376 Servidor/(16047:16052): PID 16058: Comienzo Rafaga IO
+[INFO] 12:49:14:376 Servidor/(16047:16053): Iniciando Ejecucion PID 16059
+[INFO] 12:49:14:376 Servidor/(16047:16053): PID 16059: Me llegó una operación de IO.
+[INFO] 12:49:14:376 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:14:376 Servidor/(16047:16051): Se Paso el Proceso 16059 a EXEC para Ejecutar
+[INFO] 12:49:14:377 Servidor/(16047:16051): Estimacion PID 16060: 1400.000000
+[INFO] 12:49:14:377 Servidor/(16047:16053): Iniciando Ejecucion PID 16060
+[INFO] 12:49:14:377 Servidor/(16047:16051): Se Paso el Proceso 16060 a EXEC para Ejecutar
+[INFO] 12:49:14:377 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:14:379 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:16:376 Servidor/(16047:16052): PID 16058: Fin Rafaga IO
+[INFO] 12:49:16:376 Servidor/(16047:16052): PID 16058: Se desbloqueo
+[INFO] 12:49:16:377 Servidor/(16047:16052): Estimacion PID 16058: 980.000000
+[INFO] 12:49:16:377 Servidor/(16047:16052): PID 16059: Comienzo Rafaga IO
+[INFO] 12:49:18:378 Servidor/(16047:16052): PID 16059: Fin Rafaga IO
+[INFO] 12:49:18:378 Servidor/(16047:16052): PID 16059: Se desbloqueo
+[INFO] 12:49:18:378 Servidor/(16047:16052): Estimacion PID 16059: 980.000000
+[INFO] 12:49:22:372 Servidor/(16047:16053): PID 16060: Me llegó una operación de IO.
+[INFO] 12:49:22:372 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:22:374 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:22:374 Servidor/(16047:16052): PID 16060: Comienzo Rafaga IO
+[INFO] 12:49:22:380 Servidor/(16047:16053): Iniciando Ejecucion PID 16058
+[INFO] 12:49:22:380 Servidor/(16047:16051): Se Paso el Proceso 16058 a EXEC para Ejecutar
+[INFO] 12:49:24:374 Servidor/(16047:16052): PID 16060: Fin Rafaga IO
+[INFO] 12:49:24:375 Servidor/(16047:16052): PID 16060: Se desbloqueo
+[INFO] 12:49:24:375 Servidor/(16047:16052): Estimacion PID 16060: 980.000000
+[INFO] 12:49:24:381 Servidor/(16047:16053): PID 16058: Me llegó una operación de IO.
+[INFO] 12:49:24:381 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:24:381 Servidor/(16047:16052): PID 16058: Comienzo Rafaga IO
+[INFO] 12:49:24:382 Servidor/(16047:16053): Iniciando Ejecucion PID 16059
+[INFO] 12:49:24:382 Servidor/(16047:16051): Se Paso el Proceso 16059 a EXEC para Ejecutar
+[INFO] 12:49:24:382 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:26:382 Servidor/(16047:16052): PID 16058: Fin Rafaga IO
+[INFO] 12:49:26:382 Servidor/(16047:16052): PID 16058: Se desbloqueo
+[INFO] 12:49:26:382 Servidor/(16047:16052): Estimacion PID 16058: 686.000000
+[INFO] 12:49:26:383 Servidor/(16047:16053): PID 16059: Me llegó una operación de IO.
+[INFO] 12:49:26:383 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:26:383 Servidor/(16047:16052): PID 16059: Comienzo Rafaga IO
+[INFO] 12:49:26:383 Servidor/(16047:16053): Iniciando Ejecucion PID 16060
+[INFO] 12:49:26:383 Servidor/(16047:16051): Se Paso el Proceso 16060 a EXEC para Ejecutar
+[INFO] 12:49:26:384 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:28:384 Servidor/(16047:16052): PID 16059: Fin Rafaga IO
+[INFO] 12:49:28:384 Servidor/(16047:16052): PID 16059: Se desbloqueo
+[INFO] 12:49:28:384 Servidor/(16047:16052): Estimacion PID 16059: 686.000000
+[INFO] 12:49:36:387 Servidor/(16047:16053): PID 16060: Me llegó una operación de IO.
+[INFO] 12:49:36:388 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:36:389 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:36:389 Servidor/(16047:16052): PID 16060: Comienzo Rafaga IO
+[INFO] 12:49:36:395 Servidor/(16047:16053): Iniciando Ejecucion PID 16058
+[INFO] 12:49:36:396 Servidor/(16047:16051): Se Paso el Proceso 16058 a EXEC para Ejecutar
+[INFO] 12:49:38:390 Servidor/(16047:16052): PID 16060: Fin Rafaga IO
+[INFO] 12:49:38:391 Servidor/(16047:16052): PID 16060: Se desbloqueo
+[INFO] 12:49:38:391 Servidor/(16047:16052): Estimacion PID 16060: 686.000000
+[INFO] 12:49:38:396 Servidor/(16047:16053): PID 16058: Me llegó una operación de IO.
+[INFO] 12:49:38:397 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:38:397 Servidor/(16047:16052): PID 16058: Comienzo Rafaga IO
+[INFO] 12:49:38:397 Servidor/(16047:16053): Iniciando Ejecucion PID 16059
+[INFO] 12:49:38:397 Servidor/(16047:16051): Se Paso el Proceso 16059 a EXEC para Ejecutar
+[INFO] 12:49:38:398 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:40:397 Servidor/(16047:16052): PID 16058: Fin Rafaga IO
+[INFO] 12:49:40:397 Servidor/(16047:16052): PID 16058: Se desbloqueo
+[INFO] 12:49:40:397 Servidor/(16047:16052): Estimacion PID 16058: 480.199982
+[INFO] 12:49:40:398 Servidor/(16047:16053): PID 16059: Me llegó una operación de IO.
+[INFO] 12:49:40:398 Servidor/(16047:16053): CPU en estado FREE
+[INFO] 12:49:40:398 Servidor/(16047:16052): PID 16059: Comienzo Rafaga IO
+[INFO] 12:49:40:398 Servidor/(16047:16053): Iniciando Ejecucion PID 16060
+[INFO] 12:49:40:398 Servidor/(16047:16051): Se Paso el Proceso 16060 a EXEC para Ejecutar
+[INFO] 12:49:40:399 Servidor/(16047:16050): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:49:42:399 Servidor/(16047:16052): PID 16059: Fin Rafaga IO
+[INFO] 12:49:42:399 Servidor/(16047:16052): PID 16059: Se desbloqueo
+[INFO] 12:49:42:399 Servidor/(16047:16052): Estimacion PID 16059: 480.199982
+[INFO] 12:49:43:338 Servidor/(16047:16053): PID -1274015416: La operación es inválida
+[INFO] 12:56:43:880 Servidor/(16727:16727): Creada la CPU 0
+[INFO] 12:56:43:880 Servidor/(16727:16733): CPU Creada
+[INFO] 12:56:43:880 Servidor/(16727:16732): Iniciado el planificador de IO
+[INFO] 12:56:43:880 Servidor/(16727:16731): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 12:56:43:880 Servidor/(16727:16729): Planificador de Largo Plazo iniciado
+[INFO] 12:56:43:892 Servidor/(16727:16727): Servidor listo para recibir al cliente
+[INFO] 12:56:43:893 Servidor/(16727:16727): Creado recurso de IO pelopincho
+[INFO] 12:56:43:893 Servidor/(16727:16727): Dispositivos IO Creados
+[INFO] 12:56:43:880 Servidor/(16727:16734): Iniciado el hilo para finalizar procesos
+[INFO] 12:56:43:912 Servidor/(16727:16736): -------------------------------------------------------------
+[INFO] 12:56:43:912 Servidor/(16727:16736): -------------------------------------------------------------
+[INFO] 12:56:43:912 Servidor/(16727:16736): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 12:56:43:912 Servidor/(16727:16736): -------------------------------------------------------------
+[INFO] 12:56:43:912 Servidor/(16727:16736): -------------------------------------------------------------
+[INFO] 12:56:43:912 Servidor/(16727:16736): -------------------------------------------------------------
+[INFO] 12:56:46:127 Servidor/(16727:16727): Se conecto un cliente!
+[INFO] 12:56:46:128 Servidor/(16727:16727): PID 16738: Llegó un carpincho
+[INFO] 12:56:46:128 Servidor/(16727:16729): Moviendo proceso con PID 16738 de NEW a READY
+[INFO] 12:56:46:128 Servidor/(16727:16729): Proceso con PID 16738 esta READY
+[INFO] 12:56:46:128 Servidor/(16727:16731): Estimacion PID 16738: 1400.000000
+[INFO] 12:56:46:128 Servidor/(16727:16731): Se Paso el Proceso 16738 a EXEC para Ejecutar
+[INFO] 12:56:46:128 Servidor/(16727:16733): Iniciando Ejecucion PID 16738
+[INFO] 12:56:46:129 Servidor/(16727:16727): Se conecto un cliente!
+[INFO] 12:56:46:129 Servidor/(16727:16727): PID 16739: Llegó un carpincho
+[INFO] 12:56:46:129 Servidor/(16727:16729): Moviendo proceso con PID 16739 de NEW a READY
+[INFO] 12:56:46:129 Servidor/(16727:16729): Proceso con PID 16739 esta READY
+[INFO] 12:56:46:129 Servidor/(16727:16731): Estimacion PID 16739: 1400.000000
+[INFO] 12:56:46:134 Servidor/(16727:16727): Se conecto un cliente!
+[INFO] 12:56:46:135 Servidor/(16727:16727): PID 16740: Llegó un carpincho
+[INFO] 12:56:46:135 Servidor/(16727:16729): Moviendo proceso con PID 16740 de NEW a READY
+[INFO] 12:56:46:135 Servidor/(16727:16729): Proceso con PID 16740 esta READY
+[INFO] 12:56:48:141 Servidor/(16727:16733): PID 16738: Me llegó una operación de IO.
+[INFO] 12:56:48:142 Servidor/(16727:16733): CPU en estado FREE
+[INFO] 12:56:48:142 Servidor/(16727:16730): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:56:48:143 Servidor/(16727:16732): PID 16738: Comienzo Rafaga IO
+[INFO] 12:56:48:143 Servidor/(16727:16733): Iniciando Ejecucion PID 16739
+[INFO] 12:56:48:143 Servidor/(16727:16733): PID 16739: Me llegó una operación de IO.
+[INFO] 12:56:48:143 Servidor/(16727:16733): CPU en estado FREE
+[INFO] 12:56:48:143 Servidor/(16727:16730): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:56:48:143 Servidor/(16727:16731): Se Paso el Proceso 16739 a EXEC para Ejecutar
+[INFO] 12:56:48:144 Servidor/(16727:16731): Estimacion PID 16740: 1400.000000
+[INFO] 12:56:48:145 Servidor/(16727:16733): Iniciando Ejecucion PID 16740
+[INFO] 12:56:48:147 Servidor/(16727:16731): Se Paso el Proceso 16740 a EXEC para Ejecutar
+[INFO] 12:56:50:143 Servidor/(16727:16732): PID 16738: Fin Rafaga IO
+[INFO] 12:56:50:144 Servidor/(16727:16732): PID 16738: Se desbloqueo
+[INFO] 12:56:50:144 Servidor/(16727:16732): Estimacion PID 16738: 980.000000
+[INFO] 12:56:50:144 Servidor/(16727:16732): PID 16739: Comienzo Rafaga IO
+[INFO] 12:56:52:147 Servidor/(16727:16732): PID 16739: Fin Rafaga IO
+[INFO] 12:56:52:148 Servidor/(16727:16732): PID 16739: Se desbloqueo
+[INFO] 12:56:52:148 Servidor/(16727:16732): Estimacion PID 16739: 980.000000
+[INFO] 12:56:56:150 Servidor/(16727:16733): PID 16740: Me llegó una operación de IO.
+[INFO] 12:56:56:156 Servidor/(16727:16733): CPU en estado FREE
+[INFO] 12:56:56:156 Servidor/(16727:16730): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:56:56:157 Servidor/(16727:16732): PID 16740: Comienzo Rafaga IO
+[INFO] 12:56:56:157 Servidor/(16727:16733): Iniciando Ejecucion PID 16738
+[INFO] 12:56:56:158 Servidor/(16727:16731): Se Paso el Proceso 16738 a EXEC para Ejecutar
+[INFO] 12:56:58:158 Servidor/(16727:16732): PID 16740: Fin Rafaga IO
+[INFO] 12:56:58:158 Servidor/(16727:16732): PID 16740: Se desbloqueo
+[INFO] 12:56:58:158 Servidor/(16727:16732): Estimacion PID 16740: 980.000000
+[INFO] 12:56:58:158 Servidor/(16727:16733): PID 16738: Me llegó una operación de IO.
+[INFO] 12:56:58:158 Servidor/(16727:16733): CPU en estado FREE
+[INFO] 12:56:58:158 Servidor/(16727:16730): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:56:58:158 Servidor/(16727:16732): PID 16738: Comienzo Rafaga IO
+[INFO] 12:56:58:159 Servidor/(16727:16733): Iniciando Ejecucion PID 16739
+[INFO] 12:56:58:159 Servidor/(16727:16731): Se Paso el Proceso 16739 a EXEC para Ejecutar
+[INFO] 12:57:00:159 Servidor/(16727:16732): PID 16738: Fin Rafaga IO
+[INFO] 12:57:00:159 Servidor/(16727:16732): PID 16738: Se desbloqueo
+[INFO] 12:57:00:159 Servidor/(16727:16732): Estimacion PID 16738: 686.000000
+[INFO] 12:57:00:160 Servidor/(16727:16733): PID 16739: Me llegó una operación de IO.
+[INFO] 12:57:00:160 Servidor/(16727:16733): CPU en estado FREE
+[INFO] 12:57:00:160 Servidor/(16727:16730): Ejecutando el planificador de Mediano Plazo
+[INFO] 12:57:00:160 Servidor/(16727:16732): PID 16739: Comienzo Rafaga IO
+[INFO] 12:57:00:160 Servidor/(16727:16733): Iniciando Ejecucion PID 16740
+[INFO] 12:57:00:160 Servidor/(16727:16731): Se Paso el Proceso 16740 a EXEC para Ejecutar
+[INFO] 12:57:02:160 Servidor/(16727:16732): PID 16739: Fin Rafaga IO
+[INFO] 12:57:02:161 Servidor/(16727:16732): PID 16739: Se desbloqueo
+[INFO] 12:57:02:161 Servidor/(16727:16732): Estimacion PID 16739: 686.000000
+[INFO] 12:57:08:004 Servidor/(16727:16733): PID -1263530952: Me llegó una operación de Memoria.
+[INFO] 13:01:31:674 Servidor/(17193:17193): Creada la CPU 0
+[INFO] 13:01:31:688 Servidor/(17193:17193): Servidor listo para recibir al cliente
+[INFO] 13:01:31:689 Servidor/(17193:17193): Creado recurso de IO pelopincho
+[INFO] 13:01:31:691 Servidor/(17193:17193): Dispositivos IO Creados
+[INFO] 13:01:31:692 Servidor/(17193:17199): CPU Creada
+[INFO] 13:01:31:692 Servidor/(17193:17198): Iniciado el planificador de IO
+[INFO] 13:01:31:693 Servidor/(17193:17197): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 13:01:31:693 Servidor/(17193:17201): -------------------------------------------------------------
+[INFO] 13:01:31:694 Servidor/(17193:17201): -------------------------------------------------------------
+[INFO] 13:01:31:694 Servidor/(17193:17201): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 13:01:31:694 Servidor/(17193:17201): -------------------------------------------------------------
+[INFO] 13:01:31:694 Servidor/(17193:17201): -------------------------------------------------------------
+[INFO] 13:01:31:694 Servidor/(17193:17201): -------------------------------------------------------------
+[INFO] 13:01:31:694 Servidor/(17193:17195): Planificador de Largo Plazo iniciado
+[INFO] 13:01:31:694 Servidor/(17193:17202): Iniciado el hilo para finalizar procesos
+[INFO] 13:01:33:231 Servidor/(17193:17193): Se conecto un cliente!
+[INFO] 13:01:33:232 Servidor/(17193:17193): PID 17204: Llegó un carpincho
+[INFO] 13:01:33:232 Servidor/(17193:17195): Moviendo proceso con PID 17204 de NEW a READY
+[INFO] 13:01:33:232 Servidor/(17193:17195): Proceso con PID 17204 esta READY
+[INFO] 13:01:33:232 Servidor/(17193:17197): Estimacion PID 17204: 1400.000000
+[INFO] 13:01:33:232 Servidor/(17193:17197): Se Paso el Proceso 17204 a EXEC para Ejecutar
+[INFO] 13:01:33:232 Servidor/(17193:17199): Iniciando Ejecucion PID 17204
+[INFO] 13:01:33:233 Servidor/(17193:17193): Se conecto un cliente!
+[INFO] 13:01:33:233 Servidor/(17193:17193): PID 17205: Llegó un carpincho
+[INFO] 13:01:33:233 Servidor/(17193:17195): Moviendo proceso con PID 17205 de NEW a READY
+[INFO] 13:01:33:233 Servidor/(17193:17195): Proceso con PID 17205 esta READY
+[INFO] 13:01:33:233 Servidor/(17193:17197): Estimacion PID 17205: 1400.000000
+[INFO] 13:01:33:243 Servidor/(17193:17193): Se conecto un cliente!
+[INFO] 13:01:33:243 Servidor/(17193:17193): PID 17206: Llegó un carpincho
+[INFO] 13:01:33:244 Servidor/(17193:17195): Moviendo proceso con PID 17206 de NEW a READY
+[INFO] 13:01:33:244 Servidor/(17193:17195): Proceso con PID 17206 esta READY
+[INFO] 13:01:35:246 Servidor/(17193:17199): PID 17204: Me llegó una operación de IO.
+[INFO] 13:01:35:246 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:35:246 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:35:246 Servidor/(17193:17198): PID 17204: Comienzo Rafaga IO
+[INFO] 13:01:35:246 Servidor/(17193:17199): Iniciando Ejecucion PID 17205
+[INFO] 13:01:35:246 Servidor/(17193:17199): PID 17205: Me llegó una operación de IO.
+[INFO] 13:01:35:246 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:35:246 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:35:246 Servidor/(17193:17197): Se Paso el Proceso 17205 a EXEC para Ejecutar
+[INFO] 13:01:35:247 Servidor/(17193:17197): Estimacion PID 17206: 1400.000000
+[INFO] 13:01:35:247 Servidor/(17193:17199): Iniciando Ejecucion PID 17206
+[INFO] 13:01:35:248 Servidor/(17193:17197): Se Paso el Proceso 17206 a EXEC para Ejecutar
+[INFO] 13:01:37:246 Servidor/(17193:17198): PID 17204: Fin Rafaga IO
+[INFO] 13:01:37:246 Servidor/(17193:17198): PID 17204: Se desbloqueo
+[INFO] 13:01:37:246 Servidor/(17193:17198): Estimacion PID 17204: 980.000000
+[INFO] 13:01:37:247 Servidor/(17193:17198): PID 17205: Comienzo Rafaga IO
+[INFO] 13:01:39:248 Servidor/(17193:17198): PID 17205: Fin Rafaga IO
+[INFO] 13:01:39:248 Servidor/(17193:17198): PID 17205: Se desbloqueo
+[INFO] 13:01:39:248 Servidor/(17193:17198): Estimacion PID 17205: 980.000000
+[INFO] 13:01:43:249 Servidor/(17193:17199): PID 17206: Me llegó una operación de IO.
+[INFO] 13:01:43:249 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:43:249 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:43:249 Servidor/(17193:17198): PID 17206: Comienzo Rafaga IO
+[INFO] 13:01:43:249 Servidor/(17193:17199): Iniciando Ejecucion PID 17204
+[INFO] 13:01:43:250 Servidor/(17193:17197): Se Paso el Proceso 17204 a EXEC para Ejecutar
+[INFO] 13:01:45:250 Servidor/(17193:17198): PID 17206: Fin Rafaga IO
+[INFO] 13:01:45:251 Servidor/(17193:17198): PID 17206: Se desbloqueo
+[INFO] 13:01:45:252 Servidor/(17193:17198): Estimacion PID 17206: 980.000000
+[INFO] 13:01:45:252 Servidor/(17193:17199): PID 17204: Me llegó una operación de IO.
+[INFO] 13:01:45:252 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:45:252 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:45:252 Servidor/(17193:17198): PID 17204: Comienzo Rafaga IO
+[INFO] 13:01:45:252 Servidor/(17193:17199): Iniciando Ejecucion PID 17205
+[INFO] 13:01:45:252 Servidor/(17193:17197): Se Paso el Proceso 17205 a EXEC para Ejecutar
+[INFO] 13:01:47:252 Servidor/(17193:17198): PID 17204: Fin Rafaga IO
+[INFO] 13:01:47:253 Servidor/(17193:17198): PID 17204: Se desbloqueo
+[INFO] 13:01:47:253 Servidor/(17193:17198): Estimacion PID 17204: 686.000000
+[INFO] 13:01:47:254 Servidor/(17193:17199): PID 17205: Me llegó una operación de IO.
+[INFO] 13:01:47:255 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:47:255 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:47:255 Servidor/(17193:17198): PID 17205: Comienzo Rafaga IO
+[INFO] 13:01:47:255 Servidor/(17193:17199): Iniciando Ejecucion PID 17206
+[INFO] 13:01:47:255 Servidor/(17193:17197): Se Paso el Proceso 17206 a EXEC para Ejecutar
+[INFO] 13:01:49:255 Servidor/(17193:17198): PID 17205: Fin Rafaga IO
+[INFO] 13:01:49:255 Servidor/(17193:17198): PID 17205: Se desbloqueo
+[INFO] 13:01:49:255 Servidor/(17193:17198): Estimacion PID 17205: 686.000000
+[INFO] 13:01:57:259 Servidor/(17193:17199): PID 17206: Me llegó una operación de IO.
+[INFO] 13:01:57:259 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:57:259 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:57:272 Servidor/(17193:17198): PID 17206: Comienzo Rafaga IO
+[INFO] 13:01:57:273 Servidor/(17193:17199): Iniciando Ejecucion PID 17204
+[INFO] 13:01:57:273 Servidor/(17193:17197): Se Paso el Proceso 17204 a EXEC para Ejecutar
+[INFO] 13:01:59:273 Servidor/(17193:17198): PID 17206: Fin Rafaga IO
+[INFO] 13:01:59:273 Servidor/(17193:17198): PID 17206: Se desbloqueo
+[INFO] 13:01:59:273 Servidor/(17193:17198): Estimacion PID 17206: 686.000000
+[INFO] 13:01:59:274 Servidor/(17193:17199): PID 17204: Me llegó una operación de IO.
+[INFO] 13:01:59:274 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:01:59:274 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:01:59:274 Servidor/(17193:17198): PID 17204: Comienzo Rafaga IO
+[INFO] 13:01:59:274 Servidor/(17193:17199): Iniciando Ejecucion PID 17205
+[INFO] 13:01:59:274 Servidor/(17193:17197): Se Paso el Proceso 17205 a EXEC para Ejecutar
+[INFO] 13:02:01:276 Servidor/(17193:17198): PID 17204: Fin Rafaga IO
+[INFO] 13:02:01:278 Servidor/(17193:17198): PID 17204: Se desbloqueo
+[INFO] 13:02:01:278 Servidor/(17193:17198): Estimacion PID 17204: 480.199982
+[INFO] 13:02:01:278 Servidor/(17193:17199): PID 17205: Me llegó una operación de IO.
+[INFO] 13:02:01:279 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:02:01:279 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:02:01:279 Servidor/(17193:17198): PID 17205: Comienzo Rafaga IO
+[INFO] 13:02:01:279 Servidor/(17193:17199): Iniciando Ejecucion PID 17206
+[INFO] 13:02:01:279 Servidor/(17193:17197): Se Paso el Proceso 17206 a EXEC para Ejecutar
+[INFO] 13:02:03:279 Servidor/(17193:17198): PID 17205: Fin Rafaga IO
+[INFO] 13:02:03:279 Servidor/(17193:17198): PID 17205: Se desbloqueo
+[INFO] 13:02:03:280 Servidor/(17193:17198): Estimacion PID 17205: 480.199982
+[INFO] 13:02:11:292 Servidor/(17193:17199): PID 17206: Me llegó una operación de IO.
+[INFO] 13:02:11:292 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:02:11:292 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:02:11:294 Servidor/(17193:17198): PID 17206: Comienzo Rafaga IO
+[INFO] 13:02:11:305 Servidor/(17193:17199): Iniciando Ejecucion PID 17204
+[INFO] 13:02:11:306 Servidor/(17193:17197): Se Paso el Proceso 17204 a EXEC para Ejecutar
+[INFO] 13:02:13:294 Servidor/(17193:17198): PID 17206: Fin Rafaga IO
+[INFO] 13:02:13:295 Servidor/(17193:17198): PID 17206: Se desbloqueo
+[INFO] 13:02:13:295 Servidor/(17193:17198): Estimacion PID 17206: 480.199982
+[INFO] 13:02:13:307 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:02:13:308 Servidor/(17193:17202): PID 17204: Se mandó un paquete
+[INFO] 13:02:13:308 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:02:13:308 Servidor/(17193:17202): Finalizando proceso PID: 17204
+[INFO] 13:02:13:314 Servidor/(17193:17199): Iniciando Ejecucion PID 17205
+[INFO] 13:02:13:316 Servidor/(17193:17197): Se Paso el Proceso 17205 a EXEC para Ejecutar
+[INFO] 13:02:15:317 Servidor/(17193:17199): CPU en estado FREE
+[INFO] 13:02:15:317 Servidor/(17193:17202): PID 17205: Se mandó un paquete
+[INFO] 13:02:15:317 Servidor/(17193:17196): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:02:15:317 Servidor/(17193:17202): Finalizando proceso PID: 17205
+[INFO] 13:02:15:320 Servidor/(17193:17199): Iniciando Ejecucion PID 17206
+[INFO] 13:02:15:321 Servidor/(17193:17197): Se Paso el Proceso 17206 a EXEC para Ejecutar
+[INFO] 13:02:23:429 Servidor/(17193:17199): PID 1782915183: La operación es inválida
+[INFO] 13:31:03:357 Servidor/(19680:19680): Creada la CPU 0
+[INFO] 13:31:03:363 Servidor/(19680:19680): Servidor listo para recibir al cliente
+[INFO] 13:31:03:375 Servidor/(19680:19680): Creado recurso de IO pelopincho
+[INFO] 13:31:03:375 Servidor/(19680:19680): Dispositivos IO Creados
+[INFO] 13:31:03:376 Servidor/(19680:19686): CPU Creada
+[INFO] 13:31:03:376 Servidor/(19680:19685): Iniciado el planificador de IO
+[INFO] 13:31:03:376 Servidor/(19680:19684): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 13:31:03:376 Servidor/(19680:19688): -------------------------------------------------------------
+[INFO] 13:31:03:376 Servidor/(19680:19688): -------------------------------------------------------------
+[INFO] 13:31:03:376 Servidor/(19680:19688): Servidor ejecutando algoritmo de detección y recuperación
+[INFO] 13:31:03:376 Servidor/(19680:19688): -------------------------------------------------------------
+[INFO] 13:31:03:377 Servidor/(19680:19688): -------------------------------------------------------------
+[INFO] 13:31:03:377 Servidor/(19680:19688): -------------------------------------------------------------
+[INFO] 13:31:03:377 Servidor/(19680:19682): Planificador de Largo Plazo iniciado
+[INFO] 13:31:03:377 Servidor/(19680:19689): Iniciado el hilo para finalizar procesos
+[INFO] 13:31:06:043 Servidor/(19680:19680): Se conecto un cliente!
+[INFO] 13:31:06:045 Servidor/(19680:19680): PID 19694: Llegó un carpincho
+[INFO] 13:31:06:046 Servidor/(19680:19682): Moviendo proceso con PID 19694 de NEW a READY
+[INFO] 13:31:06:046 Servidor/(19680:19682): Proceso con PID 19694 esta READY
+[INFO] 13:31:06:046 Servidor/(19680:19684): Estimacion PID 19694: 1400.000000
+[INFO] 13:31:06:046 Servidor/(19680:19684): Se Paso el Proceso 19694 a EXEC para Ejecutar
+[INFO] 13:31:06:046 Servidor/(19680:19686): Iniciando Ejecucion PID 19694
+[INFO] 13:31:06:046 Servidor/(19680:19680): Se conecto un cliente!
+[INFO] 13:31:06:047 Servidor/(19680:19680): PID 19695: Llegó un carpincho
+[INFO] 13:31:06:047 Servidor/(19680:19682): Moviendo proceso con PID 19695 de NEW a READY
+[INFO] 13:31:06:047 Servidor/(19680:19682): Proceso con PID 19695 esta READY
+[INFO] 13:31:06:047 Servidor/(19680:19684): Estimacion PID 19695: 1400.000000
+[INFO] 13:31:06:056 Servidor/(19680:19680): Se conecto un cliente!
+[INFO] 13:31:06:056 Servidor/(19680:19680): PID 19696: Llegó un carpincho
+[INFO] 13:31:06:056 Servidor/(19680:19682): Moviendo proceso con PID 19696 de NEW a READY
+[INFO] 13:31:06:056 Servidor/(19680:19682): Proceso con PID 19696 esta READY
+[INFO] 13:31:08:057 Servidor/(19680:19686): PID 19694: Me llegó una operación de IO.
+[INFO] 13:31:08:057 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:08:057 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:08:058 Servidor/(19680:19685): PID 19694: Comienzo Rafaga IO
+[INFO] 13:31:08:058 Servidor/(19680:19686): Iniciando Ejecucion PID 19695
+[INFO] 13:31:08:058 Servidor/(19680:19686): PID 19695: Me llegó una operación de IO.
+[INFO] 13:31:08:058 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:08:058 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:08:058 Servidor/(19680:19684): Se Paso el Proceso 19695 a EXEC para Ejecutar
+[INFO] 13:31:08:058 Servidor/(19680:19684): Estimacion PID 19696: 1400.000000
+[INFO] 13:31:08:059 Servidor/(19680:19686): Iniciando Ejecucion PID 19696
+[INFO] 13:31:08:059 Servidor/(19680:19684): Se Paso el Proceso 19696 a EXEC para Ejecutar
+[INFO] 13:31:10:058 Servidor/(19680:19685): PID 19694: Fin Rafaga IO
+[INFO] 13:31:10:058 Servidor/(19680:19685): PID 19694: Se desbloqueo
+[INFO] 13:31:10:058 Servidor/(19680:19685): Estimacion PID 19694: 980.000000
+[INFO] 13:31:10:059 Servidor/(19680:19685): PID 19695: Comienzo Rafaga IO
+[INFO] 13:31:12:059 Servidor/(19680:19685): PID 19695: Fin Rafaga IO
+[INFO] 13:31:12:060 Servidor/(19680:19685): PID 19695: Se desbloqueo
+[INFO] 13:31:12:060 Servidor/(19680:19685): Estimacion PID 19695: 980.000000
+[INFO] 13:31:16:063 Servidor/(19680:19686): PID 19696: Me llegó una operación de IO.
+[INFO] 13:31:16:063 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:16:063 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:16:064 Servidor/(19680:19685): PID 19696: Comienzo Rafaga IO
+[INFO] 13:31:16:071 Servidor/(19680:19686): Iniciando Ejecucion PID 19694
+[INFO] 13:31:16:071 Servidor/(19680:19684): Se Paso el Proceso 19694 a EXEC para Ejecutar
+[INFO] 13:31:18:065 Servidor/(19680:19685): PID 19696: Fin Rafaga IO
+[INFO] 13:31:18:065 Servidor/(19680:19685): PID 19696: Se desbloqueo
+[INFO] 13:31:18:066 Servidor/(19680:19685): Estimacion PID 19696: 980.000000
+[INFO] 13:31:18:072 Servidor/(19680:19686): PID 19694: Me llegó una operación de IO.
+[INFO] 13:31:18:072 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:18:072 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:18:072 Servidor/(19680:19685): PID 19694: Comienzo Rafaga IO
+[INFO] 13:31:18:072 Servidor/(19680:19686): Iniciando Ejecucion PID 19695
+[INFO] 13:31:18:072 Servidor/(19680:19684): Se Paso el Proceso 19695 a EXEC para Ejecutar
+[INFO] 13:31:20:072 Servidor/(19680:19685): PID 19694: Fin Rafaga IO
+[INFO] 13:31:20:074 Servidor/(19680:19685): PID 19694: Se desbloqueo
+[INFO] 13:31:20:074 Servidor/(19680:19685): Estimacion PID 19694: 686.000000
+[INFO] 13:31:20:074 Servidor/(19680:19686): PID 19695: Me llegó una operación de IO.
+[INFO] 13:31:20:074 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:20:074 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:20:074 Servidor/(19680:19685): PID 19695: Comienzo Rafaga IO
+[INFO] 13:31:20:074 Servidor/(19680:19686): Iniciando Ejecucion PID 19696
+[INFO] 13:31:20:075 Servidor/(19680:19684): Se Paso el Proceso 19696 a EXEC para Ejecutar
+[INFO] 13:31:22:077 Servidor/(19680:19685): PID 19695: Fin Rafaga IO
+[INFO] 13:31:22:077 Servidor/(19680:19685): PID 19695: Se desbloqueo
+[INFO] 13:31:22:078 Servidor/(19680:19685): Estimacion PID 19695: 686.000000
+[INFO] 13:31:30:080 Servidor/(19680:19686): PID 19696: Me llegó una operación de IO.
+[INFO] 13:31:30:083 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:30:083 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:30:083 Servidor/(19680:19685): PID 19696: Comienzo Rafaga IO
+[INFO] 13:31:30:090 Servidor/(19680:19686): Iniciando Ejecucion PID 19694
+[INFO] 13:31:30:096 Servidor/(19680:19684): Se Paso el Proceso 19694 a EXEC para Ejecutar
+[INFO] 13:31:32:084 Servidor/(19680:19685): PID 19696: Fin Rafaga IO
+[INFO] 13:31:32:084 Servidor/(19680:19685): PID 19696: Se desbloqueo
+[INFO] 13:31:32:084 Servidor/(19680:19685): Estimacion PID 19696: 686.000000
+[INFO] 13:31:32:097 Servidor/(19680:19686): PID 19694: Me llegó una operación de IO.
+[INFO] 13:31:32:097 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:32:097 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:32:097 Servidor/(19680:19685): PID 19694: Comienzo Rafaga IO
+[INFO] 13:31:32:097 Servidor/(19680:19686): Iniciando Ejecucion PID 19695
+[INFO] 13:31:32:097 Servidor/(19680:19684): Se Paso el Proceso 19695 a EXEC para Ejecutar
+[INFO] 13:31:34:098 Servidor/(19680:19685): PID 19694: Fin Rafaga IO
+[INFO] 13:31:34:098 Servidor/(19680:19685): PID 19694: Se desbloqueo
+[INFO] 13:31:34:098 Servidor/(19680:19685): Estimacion PID 19694: 480.199982
+[INFO] 13:31:34:098 Servidor/(19680:19686): PID 19695: Me llegó una operación de IO.
+[INFO] 13:31:34:098 Servidor/(19680:19686): CPU en estado FREE
+[INFO] 13:31:34:098 Servidor/(19680:19683): Ejecutando el planificador de Mediano Plazo
+[INFO] 13:31:34:098 Servidor/(19680:19685): PID 19695: Comienzo Rafaga IO
+[INFO] 13:31:34:099 Servidor/(19680:19686): Iniciando Ejecucion PID 19696
+[INFO] 13:31:34:099 Servidor/(19680:19684): Se Paso el Proceso 19696 a EXEC para Ejecutar
+[INFO] 13:31:36:099 Servidor/(19680:19685): PID 19695: Fin Rafaga IO
+[INFO] 13:31:36:100 Servidor/(19680:19685): PID 19695: Se desbloqueo
+[INFO] 13:31:36:100 Servidor/(19680:19685): Estimacion PID 19695: 480.199982
+[INFO] 13:31:37:833 Servidor/(19680:19686): PID -1271918120: Me llegó una operación de Memoria.

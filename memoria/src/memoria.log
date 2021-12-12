@@ -1,0 +1,252 @@
+[INFO] 12:20:09:018 Memoria/(13498:13498): El Logger de memoria fue creado
+[INFO] 12:20:09:027 Memoria/(13498:13498): Iniciando memoria
+[INFO] 12:20:09:027 Memoria/(13498:13498): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 12:20:09:029 Memoria/(13498:13498): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 12:20:09:102 Memoria/(13498:13498): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 12:20:09:102 Memoria/(13498:13498): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 12:20:09:103 Memoria/(13498:13498): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 12:20:09:603 Memoria/(13498:13498): El valor de retorno es: 0
+[INFO] 12:20:09:603 Memoria/(13498:13498): Registrando manejadores de signals
+[INFO] 12:20:09:603 Memoria/(13498:13498): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 12:20:09:604 Memoria/(13498:13498): Estoy esperando clientes
+[INFO] 12:20:11:290 Memoria/(13498:13498): Se conecto un cliente!
+[INFO] 12:20:11:291 Memoria/(13498:13498): Valor de socket servidor: 7
+[INFO] 12:20:11:291 Memoria/(13498:13498): Estoy esperando clientes
+[INFO] 12:20:11:292 Memoria/(13498:13506): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 12:21:14:001 Memoria/(13498:13498): --------------------signal sigint--------------------
+[INFO] 12:21:14:001 Memoria/(13498:13498): Cantidad de hits TLB Totales: 0
+[INFO] 12:21:14:001 Memoria/(13498:13498): Cantidad de miss TLB Totales: 0
+[INFO] 12:21:14:001 Memoria/(13498:13498): --------------------signal sigint--------------------
+[INFO] 12:21:45:017 Memoria/(13655:13655): El Logger de memoria fue creado
+[INFO] 12:21:45:018 Memoria/(13655:13655): Iniciando memoria
+[INFO] 12:21:45:018 Memoria/(13655:13655): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 12:21:45:018 Memoria/(13655:13655): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 12:21:45:090 Memoria/(13655:13655): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 12:21:45:091 Memoria/(13655:13655): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 12:21:45:093 Memoria/(13655:13655): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 12:21:45:594 Memoria/(13655:13655): El valor de retorno es: 0
+[INFO] 12:21:45:594 Memoria/(13655:13655): Registrando manejadores de signals
+[INFO] 12:21:45:594 Memoria/(13655:13655): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 12:21:45:594 Memoria/(13655:13655): Estoy esperando clientes
+[INFO] 12:21:46:851 Memoria/(13655:13655): Se conecto un cliente!
+[INFO] 12:21:46:851 Memoria/(13655:13655): Valor de socket servidor: 7
+[INFO] 12:21:46:851 Memoria/(13655:13655): Estoy esperando clientes
+[INFO] 12:21:46:867 Memoria/(13655:13663): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 12:22:30:157 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Procesando mensaje
+[DEBUG] 12:22:30:157 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Antes de deserealizar
+[INFO] 12:22:30:157 Memoria/(13655:13663): Tipo: 0
+[INFO] 12:22:30:157 Memoria/(13655:13663): Largo sem: 1
+[INFO] 12:22:30:157 Memoria/(13655:13663): PID: 13673
+[INFO] 12:22:30:157 Memoria/(13655:13663): Estado: 5
+[INFO] 12:22:30:157 Memoria/(13655:13663): Memoria Size: 1
+[INFO] 12:22:30:158 Memoria/(13655:13663): Memoria Valor: °SAR_MENSAJE
+[INFO] 12:22:30:158 Memoria/(13655:13663): Tipo Operacion: 4
+[INFO] 12:22:30:158 Memoria/(13655:13663): Largo: 1
+[INFO] 12:22:30:158 Memoria/(13655:13663): Nombre: °ntes de des
+[INFO] 12:22:30:158 Memoria/(13655:13663): Largo nuevamente: 15
+[INFO] 12:22:30:158 Memoria/(13655:13663): Estado: 5
+[INFO] 12:22:30:158 Memoria/(13655:13663): PID: 13673
+[INFO] 12:22:30:158 Memoria/(13655:13663): Tipo: 0
+[DEBUG] 12:22:30:158 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Despues de deserealizar
+[DEBUG] 12:22:30:158 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Un carpincho solicita  memfin
+[DEBUG] 12:22:30:158 Memoria/(13655:13663): [34m[MEMFIN] - Carpincho:13673[0m
+[DEBUG] 12:22:30:158 Memoria/(13655:13663): [34m[MEMFIN] - Carpincho:13673 - ESTADO: Carpincho no existe[0m
+[DEBUG] 12:22:30:158 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Se enviara FIN FAULT
+[DEBUG] 12:22:30:159 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Respuesta enviada - Valor:-9
+[INFO] 12:22:32:161 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Procesando mensaje
+[DEBUG] 12:22:32:161 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Antes de deserealizar
+[INFO] 12:22:32:161 Memoria/(13655:13663): Tipo: 0
+[INFO] 12:22:32:161 Memoria/(13655:13663): Largo sem: 1
+[INFO] 12:22:32:161 Memoria/(13655:13663): PID: 13674
+[INFO] 12:22:32:161 Memoria/(13655:13663): Estado: 5
+[INFO] 12:22:32:161 Memoria/(13655:13663): Memoria Size: 1
+[INFO] 12:22:32:161 Memoria/(13655:13663): Memoria Valor: ÈSAR_MENSAJE
+[INFO] 12:22:32:162 Memoria/(13655:13663): Tipo Operacion: 4
+[INFO] 12:22:32:162 Memoria/(13655:13663): Largo: 1
+[INFO] 12:22:32:162 Memoria/(13655:13663): Nombre: øntes de des
+[INFO] 12:22:32:162 Memoria/(13655:13663): Largo nuevamente: 15
+[INFO] 12:22:32:162 Memoria/(13655:13663): Estado: 5
+[INFO] 12:22:32:162 Memoria/(13655:13663): PID: 13674
+[INFO] 12:22:32:162 Memoria/(13655:13663): Tipo: 0
+[DEBUG] 12:22:32:162 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Despues de deserealizar
+[DEBUG] 12:22:32:162 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Un carpincho solicita  memfin
+[DEBUG] 12:22:32:162 Memoria/(13655:13663): [34m[MEMFIN] - Carpincho:13674[0m
+[DEBUG] 12:22:32:162 Memoria/(13655:13663): [34m[MEMFIN] - Carpincho:13674 - ESTADO: Carpincho no existe[0m
+[DEBUG] 12:22:32:162 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Se enviara FIN FAULT
+[DEBUG] 12:22:32:162 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Respuesta enviada - Valor:-9
+[INFO] 12:22:42:172 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Procesando mensaje
+[DEBUG] 12:22:42:172 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Antes de deserealizar
+[INFO] 12:22:42:172 Memoria/(13655:13663): Tipo: 0
+[INFO] 12:22:42:172 Memoria/(13655:13663): Largo sem: 1
+[INFO] 12:22:42:172 Memoria/(13655:13663): PID: 13675
+[INFO] 12:22:42:173 Memoria/(13655:13663): Estado: 5
+[INFO] 12:22:42:173 Memoria/(13655:13663): Memoria Size: 1
+[INFO] 12:22:42:173 Memoria/(13655:13663): Memoria Valor: °SAR_MENSAJE
+[INFO] 12:22:42:173 Memoria/(13655:13663): Tipo Operacion: 4
+[INFO] 12:22:42:175 Memoria/(13655:13663): Largo: 1
+[INFO] 12:22:42:176 Memoria/(13655:13663): Nombre: °ntes de des
+[INFO] 12:22:42:177 Memoria/(13655:13663): Largo nuevamente: 15
+[INFO] 12:22:42:177 Memoria/(13655:13663): Estado: 5
+[INFO] 12:22:42:177 Memoria/(13655:13663): PID: 13675
+[INFO] 12:22:42:177 Memoria/(13655:13663): Tipo: 0
+[DEBUG] 12:22:42:177 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Despues de deserealizar
+[DEBUG] 12:22:42:177 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Un carpincho solicita  memfin
+[DEBUG] 12:22:42:177 Memoria/(13655:13663): [34m[MEMFIN] - Carpincho:13675[0m
+[DEBUG] 12:22:42:177 Memoria/(13655:13663): [34m[MEMFIN] - Carpincho:13675 - ESTADO: Carpincho no existe[0m
+[DEBUG] 12:22:42:177 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - Se enviara FIN FAULT
+[DEBUG] 12:22:42:177 Memoria/(13655:13663): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Respuesta enviada - Valor:-9
+[INFO] 12:45:59:906 Memoria/(13655:13655): --------------------signal sigint--------------------
+[INFO] 12:45:59:906 Memoria/(13655:13655): Cantidad de hits TLB Totales: 0
+[INFO] 12:45:59:906 Memoria/(13655:13655): Cantidad de miss TLB Totales: 0
+[INFO] 12:45:59:906 Memoria/(13655:13655): --------------------signal sigint--------------------
+[INFO] 12:46:03:204 Memoria/(15702:15702): El Logger de memoria fue creado
+[INFO] 12:46:03:204 Memoria/(15702:15702): Iniciando memoria
+[INFO] 12:46:03:204 Memoria/(15702:15702): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 12:46:03:204 Memoria/(15702:15702): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 12:46:03:298 Memoria/(15702:15702): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 12:46:03:299 Memoria/(15702:15702): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 12:46:03:300 Memoria/(15702:15702): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 12:46:03:801 Memoria/(15702:15702): El valor de retorno es: 0
+[INFO] 12:46:03:801 Memoria/(15702:15702): Registrando manejadores de signals
+[INFO] 12:46:03:801 Memoria/(15702:15702): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 12:46:03:801 Memoria/(15702:15702): Estoy esperando clientes
+[INFO] 12:46:20:376 Memoria/(15702:15702): Se conecto un cliente!
+[INFO] 12:46:20:377 Memoria/(15702:15702): Valor de socket servidor: 7
+[INFO] 12:46:20:377 Memoria/(15702:15702): Estoy esperando clientes
+[INFO] 12:46:20:390 Memoria/(15702:15746): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 12:46:58:416 Memoria/(15702:15702): --------------------signal sigint--------------------
+[INFO] 12:46:58:417 Memoria/(15702:15702): Cantidad de hits TLB Totales: 0
+[INFO] 12:46:58:417 Memoria/(15702:15702): Cantidad de miss TLB Totales: 0
+[INFO] 12:46:58:417 Memoria/(15702:15702): --------------------signal sigint--------------------
+[INFO] 12:49:06:316 Memoria/(16016:16016): El Logger de memoria fue creado
+[INFO] 12:49:06:316 Memoria/(16016:16016): Iniciando memoria
+[INFO] 12:49:06:316 Memoria/(16016:16016): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 12:49:06:316 Memoria/(16016:16016): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 12:49:06:380 Memoria/(16016:16016): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 12:49:06:380 Memoria/(16016:16016): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 12:49:06:381 Memoria/(16016:16016): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 12:49:06:881 Memoria/(16016:16016): El valor de retorno es: 0
+[INFO] 12:49:06:881 Memoria/(16016:16016): Registrando manejadores de signals
+[INFO] 12:49:06:881 Memoria/(16016:16016): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 12:49:06:881 Memoria/(16016:16016): Estoy esperando clientes
+[INFO] 12:49:09:877 Memoria/(16016:16016): Se conecto un cliente!
+[INFO] 12:49:09:877 Memoria/(16016:16016): Valor de socket servidor: 7
+[INFO] 12:49:09:877 Memoria/(16016:16016): Estoy esperando clientes
+[INFO] 12:49:09:893 Memoria/(16016:16048): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 12:49:44:649 Memoria/(16016:16016): --------------------signal sigint--------------------
+[INFO] 12:49:44:649 Memoria/(16016:16016): Cantidad de hits TLB Totales: 0
+[INFO] 12:49:44:649 Memoria/(16016:16016): Cantidad de miss TLB Totales: 0
+[INFO] 12:49:44:649 Memoria/(16016:16016): --------------------signal sigint--------------------
+[INFO] 12:56:40:218 Memoria/(16701:16701): El Logger de memoria fue creado
+[INFO] 12:56:40:218 Memoria/(16701:16701): Iniciando memoria
+[INFO] 12:56:40:218 Memoria/(16701:16701): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 12:56:40:218 Memoria/(16701:16701): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 12:56:40:290 Memoria/(16701:16701): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 12:56:40:291 Memoria/(16701:16701): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 12:56:40:292 Memoria/(16701:16701): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 12:56:40:796 Memoria/(16701:16701): El valor de retorno es: 0
+[INFO] 12:56:40:796 Memoria/(16701:16701): Registrando manejadores de signals
+[INFO] 12:56:40:796 Memoria/(16701:16701): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 12:56:40:796 Memoria/(16701:16701): Estoy esperando clientes
+[INFO] 12:56:43:879 Memoria/(16701:16701): Se conecto un cliente!
+[INFO] 12:56:43:879 Memoria/(16701:16701): Valor de socket servidor: 7
+[INFO] 12:56:43:879 Memoria/(16701:16701): Estoy esperando clientes
+[INFO] 12:56:43:880 Memoria/(16701:16728): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 13:01:24:126 Memoria/(16701:16701): --------------------signal sigint--------------------
+[INFO] 13:01:24:126 Memoria/(16701:16701): Cantidad de hits TLB Totales: 0
+[INFO] 13:01:24:126 Memoria/(16701:16701): Cantidad de miss TLB Totales: 0
+[INFO] 13:01:24:126 Memoria/(16701:16701): --------------------signal sigint--------------------
+[INFO] 13:01:26:881 Memoria/(17167:17167): El Logger de memoria fue creado
+[INFO] 13:01:26:881 Memoria/(17167:17167): Iniciando memoria
+[INFO] 13:01:26:881 Memoria/(17167:17167): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 13:01:26:881 Memoria/(17167:17167): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 13:01:26:945 Memoria/(17167:17167): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 13:01:26:945 Memoria/(17167:17167): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 13:01:26:945 Memoria/(17167:17167): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 13:01:27:446 Memoria/(17167:17167): El valor de retorno es: 0
+[INFO] 13:01:27:446 Memoria/(17167:17167): Registrando manejadores de signals
+[INFO] 13:01:27:446 Memoria/(17167:17167): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 13:01:27:446 Memoria/(17167:17167): Estoy esperando clientes
+[INFO] 13:01:31:673 Memoria/(17167:17167): Se conecto un cliente!
+[INFO] 13:01:31:673 Memoria/(17167:17167): Valor de socket servidor: 7
+[INFO] 13:01:31:673 Memoria/(17167:17167): Estoy esperando clientes
+[INFO] 13:01:31:693 Memoria/(17167:17194): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 13:02:13:308 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Procesando mensaje
+[DEBUG] 13:02:13:308 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Antes de deserealizar
+[INFO] 13:02:13:308 Memoria/(17167:17194): Tipo: 0
+[INFO] 13:02:13:308 Memoria/(17167:17194): Largo sem: 1
+[INFO] 13:02:13:308 Memoria/(17167:17194): PID: 17204
+[INFO] 13:02:13:308 Memoria/(17167:17194): Estado: 5
+[INFO] 13:02:13:308 Memoria/(17167:17194): Memoria Size: 1
+[INFO] 13:02:13:308 Memoria/(17167:17194): Memoria Valor: °SAR_MENSAJE
+[INFO] 13:02:13:308 Memoria/(17167:17194): Tipo Operacion: 4
+[INFO] 13:02:13:308 Memoria/(17167:17194): Largo: 1
+[INFO] 13:02:13:308 Memoria/(17167:17194): Nombre: °ntes de des
+[INFO] 13:02:13:308 Memoria/(17167:17194): Largo nuevamente: 15
+[INFO] 13:02:13:308 Memoria/(17167:17194): Estado: 5
+[INFO] 13:02:13:308 Memoria/(17167:17194): PID: 17204
+[INFO] 13:02:13:308 Memoria/(17167:17194): Tipo: 0
+[DEBUG] 13:02:13:308 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Despues de deserealizar
+[DEBUG] 13:02:13:308 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Un carpincho solicita  memfin
+[DEBUG] 13:02:13:308 Memoria/(17167:17194): [34m[MEMFIN] - Carpincho:17204[0m
+[DEBUG] 13:02:13:308 Memoria/(17167:17194): [34m[MEMFIN] - Carpincho:17204 - ESTADO: Carpincho no existe[0m
+[DEBUG] 13:02:13:308 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Se enviara FIN FAULT
+[DEBUG] 13:02:13:309 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Respuesta enviada - Valor:-9
+[INFO] 13:02:15:317 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Procesando mensaje
+[DEBUG] 13:02:15:317 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Antes de deserealizar
+[INFO] 13:02:15:318 Memoria/(17167:17194): Tipo: 0
+[INFO] 13:02:15:318 Memoria/(17167:17194): Largo sem: 1
+[INFO] 13:02:15:318 Memoria/(17167:17194): PID: 17205
+[INFO] 13:02:15:319 Memoria/(17167:17194): Estado: 5
+[INFO] 13:02:15:319 Memoria/(17167:17194): Memoria Size: 1
+[INFO] 13:02:15:319 Memoria/(17167:17194): Memoria Valor: ÈSAR_MENSAJE
+[INFO] 13:02:15:319 Memoria/(17167:17194): Tipo Operacion: 4
+[INFO] 13:02:15:319 Memoria/(17167:17194): Largo: 1
+[INFO] 13:02:15:319 Memoria/(17167:17194): Nombre: øntes de des
+[INFO] 13:02:15:319 Memoria/(17167:17194): Largo nuevamente: 15
+[INFO] 13:02:15:319 Memoria/(17167:17194): Estado: 5
+[INFO] 13:02:15:319 Memoria/(17167:17194): PID: 17205
+[INFO] 13:02:15:319 Memoria/(17167:17194): Tipo: 0
+[DEBUG] 13:02:15:319 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Despues de deserealizar
+[DEBUG] 13:02:15:319 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Un carpincho solicita  memfin
+[DEBUG] 13:02:15:319 Memoria/(17167:17194): [34m[MEMFIN] - Carpincho:17205[0m
+[DEBUG] 13:02:15:319 Memoria/(17167:17194): [34m[MEMFIN] - Carpincho:17205 - ESTADO: Carpincho no existe[0m
+[DEBUG] 13:02:15:319 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - Se enviara FIN FAULT
+[DEBUG] 13:02:15:320 Memoria/(17167:17194): [SERVER_PROCESAR_MENSAJE] - MEMFIN - Respuesta enviada - Valor:-9
+[INFO] 13:30:56:761 Memoria/(17167:17167): --------------------signal sigint--------------------
+[INFO] 13:30:56:761 Memoria/(17167:17167): Cantidad de hits TLB Totales: 0
+[INFO] 13:30:56:762 Memoria/(17167:17167): Cantidad de miss TLB Totales: 0
+[INFO] 13:30:56:762 Memoria/(17167:17167): --------------------signal sigint--------------------
+[INFO] 13:31:00:043 Memoria/(19654:19654): El Logger de memoria fue creado
+[INFO] 13:31:00:043 Memoria/(19654:19654): Iniciando memoria
+[INFO] 13:31:00:044 Memoria/(19654:19654): [ MEMORIA ] Se inicializa memoria. Por favor no la rompas! =)
+[INFO] 13:31:00:044 Memoria/(19654:19654): [ MARCO ] Cantidad marcos: 12 
+
+[DEBUG] 13:31:00:125 Memoria/(19654:19654): Me conecto al ip: 127.0.0.1, puerto: 6008 con exito!
+[DEBUG] 13:31:00:125 Memoria/(19654:19654): Se envia el tipo de asignacion a swamp de tipo DINAMICA
+[INFO] 13:31:00:127 Memoria/(19654:19654): Se envio un mensaje a swamp codigo operacion: 14
+[INFO] 13:31:00:629 Memoria/(19654:19654): El valor de retorno es: 0
+[INFO] 13:31:00:629 Memoria/(19654:19654): Registrando manejadores de signals
+[INFO] 13:31:00:629 Memoria/(19654:19654): Inicio a la espera en ip: 127.0.0.1, puerto: 5011
+
+[INFO] 13:31:00:629 Memoria/(19654:19654): Estoy esperando clientes
+[INFO] 13:31:03:356 Memoria/(19654:19654): Se conecto un cliente!
+[INFO] 13:31:03:357 Memoria/(19654:19654): Valor de socket servidor: 7
+[INFO] 13:31:03:357 Memoria/(19654:19654): Estoy esperando clientes
+[INFO] 13:31:03:376 Memoria/(19654:19681): Creamos un nuevo hilo para el cliente que se conecto
+[INFO] 13:31:41:319 Memoria/(19654:19654): --------------------signal sigint--------------------
+[INFO] 13:31:41:320 Memoria/(19654:19654): Cantidad de hits TLB Totales: 0
+[INFO] 13:31:41:320 Memoria/(19654:19654): Cantidad de miss TLB Totales: 0
+[INFO] 13:31:41:320 Memoria/(19654:19654): --------------------signal sigint--------------------

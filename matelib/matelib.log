@@ -1,0 +1,16 @@
+[INFO] 14:14:17:173 matelib/(30254:30254): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 14:16:37:999 matelib/(30667:30667): Se inició la conexión
+[INFO] 14:16:38:000 matelib/(30667:30667): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 17:41:58:404 matelib/(12354:12354): Se inició la conexión
+[INFO] 17:41:58:405 matelib/(12354:12354): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 17:41:58:408 matelib/(12354:12354): Se inició la conexión
+[INFO] 18:00:39:520 matelib/(13561:13561): Se inició la conexión
+[INFO] 18:00:39:532 matelib/(13561:13561): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 15:37:12:896 matelib/(25453:25453): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 15:37:12:902 matelib/(25453:25453): Se inició la conexión y se creó una instancia
+[INFO] 15:37:22:193 matelib/(25474:25474): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 15:37:49:089 matelib/(25522:25522): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 23:08:59:956 matelib/(9869:9869): Lei la IP 127.0.0.1 y puerto 4444
+[INFO] 23:10:28:666 matelib/(9869:9869): PID 9869: Se inició la conexión y se creó una instancia
+[INFO] 23:10:28:667 matelib/(9869:9869): PID 9869: Se llamó a un dispositivo IO
+[INFO] 23:10:28:667 matelib/(9869:9869): PID 9869: Se mandó un paquete

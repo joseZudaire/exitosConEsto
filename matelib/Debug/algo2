@@ -1,0 +1,710 @@
+==1516== Memcheck, a memory error detector
+==1516== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==1516== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==1516== Command: ./matelib
+==1516== Parent PID: 28690
+==1516== 
+--1516-- 
+--1516-- Valgrind options:
+--1516--    --show-leak-kinds=all
+--1516--    --leak-check=full
+--1516--    -v
+--1516--    --log-file=algo2
+--1516-- Contents of /proc/version:
+--1516--   Linux version 4.4.0-116-generic (buildd@lgw01-amd64-023) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) ) #140-Ubuntu SMP Mon Feb 12 21:22:43 UTC 2018
+--1516-- 
+--1516-- Arch and hwcaps: X86, LittleEndian, x86-mmxext-sse1-sse2-sse3-lzcnt
+--1516-- Page sizes: currently 4096, max supported 4096
+--1516-- Valgrind library directory: /usr/lib/valgrind
+--1516-- Reading syms from /lib/i386-linux-gnu/ld-2.23.so
+--1516--   Considering /lib/i386-linux-gnu/ld-2.23.so ..
+--1516--   .. CRC mismatch (computed 596cb2b8 wanted 417b32cc)
+--1516--   Considering /usr/lib/debug/lib/i386-linux-gnu/ld-2.23.so ..
+--1516--   .. CRC is valid
+--1516-- Reading syms from /home/utnso/carpinchos-v3/tp-2021-2c-SO_ftw/matelib/Debug/matelib
+--1516-- Reading syms from /usr/lib/valgrind/memcheck-x86-linux
+--1516--   Considering /usr/lib/valgrind/memcheck-x86-linux ..
+--1516--   .. CRC mismatch (computed 6036da3f wanted 652e483f)
+--1516--    object doesn't have a symbol table
+--1516--    object doesn't have a dynamic symbol table
+--1516-- Scheduler: using generic scheduler lock implementation.
+--1516-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==1516== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-1516-by-utnso-on-???
+==1516== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-1516-by-utnso-on-???
+==1516== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-1516-by-utnso-on-???
+==1516== 
+==1516== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==1516== don't want to do, unless you know exactly what you're doing,
+==1516== or are doing some strange experiment):
+==1516==   /usr/lib/valgrind/../../bin/vgdb --pid=1516 ...command...
+==1516== 
+==1516== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==1516==   /path/to/gdb ./matelib
+==1516== and then give GDB the following command
+==1516==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=1516
+==1516== --pid is optional if only one valgrind process is running
+==1516== 
+--1516-- REDIR: 0x4018eb0 (ld-linux.so.2:strlen) redirected to 0x380490f2 (???)
+--1516-- REDIR: 0x4018c70 (ld-linux.so.2:index) redirected to 0x380490cd (???)
+--1516-- Reading syms from /usr/lib/valgrind/vgpreload_core-x86-linux.so
+--1516--   Considering /usr/lib/valgrind/vgpreload_core-x86-linux.so ..
+--1516--   .. CRC mismatch (computed 5b95c0c4 wanted 39e79efa)
+--1516--    object doesn't have a symbol table
+--1516-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so
+--1516--   Considering /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so ..
+--1516--   .. CRC mismatch (computed 4d5a1526 wanted 33571d5b)
+--1516--    object doesn't have a symbol table
+==1516== WARNING: new redirection conflicts with existing -- ignoring it
+--1516--     old: 0x04018eb0 (strlen              ) R-> (0000.0) 0x380490f2 ???
+--1516--     new: 0x04018eb0 (strlen              ) R-> (2007.0) 0x0402f410 strlen
+--1516-- Reading syms from /usr/lib/libcommons.so
+--1516-- Reading syms from /lib/i386-linux-gnu/libpthread-2.23.so
+--1516--   Considering /usr/lib/debug/.build-id/12/78da59ecc0791dce5c44d8b8756a0480be3a5b.debug ..
+--1516--   .. build-id is valid
+--1516-- Reading syms from /lib/i386-linux-gnu/libc-2.23.so
+--1516--   Considering /lib/i386-linux-gnu/libc-2.23.so ..
+--1516--   .. CRC mismatch (computed af9c0474 wanted a5de3f2a)
+--1516--   Considering /usr/lib/debug/lib/i386-linux-gnu/libc-2.23.so ..
+--1516--   .. CRC is valid
+--1516-- REDIR: 0x40f04b0 (libc.so.6:strncasecmp) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x40f7140 (libc.so.6:memrchr) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x4109b20 (libc.so.6:wcslen) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x40ef350 (libc.so.6:strstr) redirected to 0x4033700 (strstr)
+--1516-- REDIR: 0x40ee7e0 (libc.so.6:__GI_strrchr) redirected to 0x402ee00 (__GI_strrchr)
+--1516-- REDIR: 0x40e9f00 (libc.so.6:malloc) redirected to 0x402c110 (malloc)
+--1516-- REDIR: 0x40ee5c0 (libc.so.6:__GI_strlen) redirected to 0x402f390 (__GI_strlen)
+--1516-- REDIR: 0x40f0680 (libc.so.6:__GI_memcpy) redirected to 0x4030fb0 (__GI_memcpy)
+--1516-- REDIR: 0x40ea810 (libc.so.6:calloc) redirected to 0x402e010 (calloc)
+--1516-- REDIR: 0x40ee750 (libc.so.6:strncpy) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x40f8dc0 (libc.so.6:__strncpy_ssse3) redirected to 0x402f5f0 (strncpy)
+--1516-- REDIR: 0x40ea520 (libc.so.6:realloc) redirected to 0x402e250 (realloc)
+--1516-- REDIR: 0x40ee580 (libc.so.6:strlen) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x40f7440 (libc.so.6:__strlen_sse2_bsf) redirected to 0x402f370 (strlen)
+--1516-- REDIR: 0x40ee700 (libc.so.6:strncmp) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x41ae5c0 (libc.so.6:__strncmp_ssse3) redirected to 0x402fab0 (strncmp)
+--1516-- REDIR: 0x40ea470 (libc.so.6:free) redirected to 0x402d2f0 (free)
+--1516-- REDIR: 0x40f0610 (libc.so.6:memcpy) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x41a0b70 (libc.so.6:__memcpy_ssse3) redirected to 0x4030cc0 (memcpy)
+--1516-- REDIR: 0x40effc0 (libc.so.6:memset) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x419e4d0 (libc.so.6:__memset_sse2) redirected to 0x40327d0 (memset)
+--1516-- REDIR: 0x40f2280 (libc.so.6:strchrnul) redirected to 0x40330b0 (strchrnul)
+--1516-- REDIR: 0x40f00d0 (libc.so.6:__GI_mempcpy) redirected to 0x40332c0 (__GI_mempcpy)
+--1516-- REDIR: 0x40edae0 (libc.so.6:strcat) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--1516-- REDIR: 0x4102b30 (libc.so.6:__strcat_ssse3) redirected to 0x402f030 (strcat)
+--1516-- REDIR: 0x40efc10 (libc.so.6:__GI_memcmp) redirected to 0x4031ef0 (__GI_memcmp)
+--1516-- REDIR: 0x40f21b0 (libc.so.6:__GI___rawmemchr) redirected to 0x4033110 (__GI___rawmemchr)
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x80491EC: mate_init (matelib.c:83)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516==  Address 0x4232f88 is 8 bytes inside a block of size 55 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x80491EC: mate_init (matelib.c:83)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+--1516-- REDIR: 0x40f02e0 (libc.so.6:__GI_stpcpy) redirected to 0x4032290 (__GI_stpcpy)
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CAE: main (main.c:59)
+==1516==  Address 0x42364c8 is 8 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CAE: main (main.c:59)
+==1516== 
+==1516== Invalid free() / delete / delete[] / realloc()
+==1516==    at 0x402D358: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8048CBA: main (main.c:59)
+==1516==  Address 0xffffffff is not stack'd, malloc'd or (recently) free'd
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CEE: main (main.c:65)
+==1516==  Address 0x4236f68 is 8 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CEE: main (main.c:65)
+==1516== 
+==1516== Invalid free() / delete / delete[] / realloc()
+==1516==    at 0x402D358: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8048CFA: main (main.c:65)
+==1516==  Address 0xffffffff is not stack'd, malloc'd or (recently) free'd
+==1516== 
+==1516== Invalid write of size 4
+==1516==    at 0x4030ED2: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80494E1: mate_sem_init (matelib.c:153)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d10 is 0 bytes inside a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Invalid write of size 1
+==1516==    at 0x4030F43: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80494E1: mate_sem_init (matelib.c:153)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x402F383: strlen (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049501: mate_sem_init (matelib.c:154)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d11 is 0 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049514: mate_sem_init (matelib.c:157)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049514: mate_sem_init (matelib.c:157)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x42379dd is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049514: mate_sem_init (matelib.c:157)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x804959A: mate_sem_wait (matelib.c:178)
+==1516==    by 0x8048D42: main (main.c:73)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x804959A: mate_sem_wait (matelib.c:178)
+==1516==    by 0x8048D42: main (main.c:73)
+==1516==  Address 0x42383ed is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x804959A: mate_sem_wait (matelib.c:178)
+==1516==    by 0x8048D42: main (main.c:73)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x804961D: mate_sem_post (matelib.c:200)
+==1516==    by 0x8048D65: main (main.c:77)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x804961D: mate_sem_post (matelib.c:200)
+==1516==    by 0x8048D65: main (main.c:77)
+==1516==  Address 0x4238e6d is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x804961D: mate_sem_post (matelib.c:200)
+==1516==    by 0x8048D65: main (main.c:77)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x80496A0: mate_sem_destroy (matelib.c:224)
+==1516==    by 0x8048D88: main (main.c:81)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x80496A0: mate_sem_destroy (matelib.c:224)
+==1516==    by 0x8048D88: main (main.c:81)
+==1516==  Address 0x423988d is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x80496A0: mate_sem_destroy (matelib.c:224)
+==1516==    by 0x8048D88: main (main.c:81)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049842: mate_memalloc (matelib.c:282)
+==1516==    by 0x8048DA8: main (main.c:85)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049842: mate_memalloc (matelib.c:282)
+==1516==    by 0x8048DA8: main (main.c:85)
+==1516==  Address 0x423a2ad is 21 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049842: mate_memalloc (matelib.c:282)
+==1516==    by 0x8048DA8: main (main.c:85)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x80498D7: mate_memfree (matelib.c:304)
+==1516==    by 0x8048DD4: main (main.c:89)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x80498D7: mate_memfree (matelib.c:304)
+==1516==    by 0x8048DD4: main (main.c:89)
+==1516==  Address 0x423ad05 is 21 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x80498D7: mate_memfree (matelib.c:304)
+==1516==    by 0x8048DD4: main (main.c:89)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049992: mate_memread (matelib.c:327)
+==1516==    by 0x8048E04: main (main.c:93)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049992: mate_memread (matelib.c:327)
+==1516==    by 0x8048E04: main (main.c:93)
+==1516==  Address 0x423b75d is 21 bytes inside a block of size 63 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049992: mate_memread (matelib.c:327)
+==1516==    by 0x8048E04: main (main.c:93)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x804978A: mate_call_io (matelib.c:256)
+==1516==    by 0x8048E3B: main (main.c:102)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x804978A: mate_call_io (matelib.c:256)
+==1516==    by 0x8048E3B: main (main.c:102)
+==1516==  Address 0x423c265 is 21 bytes inside a block of size 69 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x804978A: mate_call_io (matelib.c:256)
+==1516==    by 0x8048E3B: main (main.c:102)
+==1516== 
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049263: mate_close (matelib.c:102)
+==1516==    by 0x8048E9A: main (main.c:115)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049263: mate_close (matelib.c:102)
+==1516==    by 0x8048E9A: main (main.c:115)
+==1516==  Address 0x423d235 is 21 bytes inside a block of size 69 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049263: mate_close (matelib.c:102)
+==1516==    by 0x8048E9A: main (main.c:115)
+==1516== 
+==1516== 
+==1516== HEAP SUMMARY:
+==1516==     in use at exit: 372 bytes in 3 blocks
+==1516==   total heap usage: 465 allocs, 464 frees, 28,168 bytes allocated
+==1516== 
+==1516== Searching for pointers to 3 not-freed blocks
+==1516== Checked 71,328 bytes
+==1516== 
+==1516== 8 bytes in 1 blocks are still reachable in loss record 1 of 3
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x40EE2C5: strdup (strdup.c:42)
+==1516==    by 0x40544A7: string_duplicate (in /usr/lib/libcommons.so)
+==1516==    by 0x4054049: log_create (in /usr/lib/libcommons.so)
+==1516==    by 0x804A030: mate_iniciar_logger (matelib.c:503)
+==1516==    by 0x8048FB3: mate_init (matelib.c:43)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 20 bytes in 1 blocks are still reachable in loss record 2 of 3
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x4053FA3: log_create (in /usr/lib/libcommons.so)
+==1516==    by 0x804A030: mate_iniciar_logger (matelib.c:503)
+==1516==    by 0x8048FB3: mate_init (matelib.c:43)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 344 bytes in 1 blocks are still reachable in loss record 3 of 3
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x40D7359: __fopen_internal (iofopen.c:69)
+==1516==    by 0x40D741D: fopen@@GLIBC_2.1 (iofopen.c:97)
+==1516==    by 0x4053EDA: txt_open_for_append (in /usr/lib/libcommons.so)
+==1516==    by 0x4053FE3: log_create (in /usr/lib/libcommons.so)
+==1516==    by 0x804A030: mate_iniciar_logger (matelib.c:503)
+==1516==    by 0x8048FB3: mate_init (matelib.c:43)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== LEAK SUMMARY:
+==1516==    definitely lost: 0 bytes in 0 blocks
+==1516==    indirectly lost: 0 bytes in 0 blocks
+==1516==      possibly lost: 0 bytes in 0 blocks
+==1516==    still reachable: 372 bytes in 3 blocks
+==1516==         suppressed: 0 bytes in 0 blocks
+==1516== 
+==1516== Use --track-origins=yes to see where uninitialised values come from
+==1516== ERROR SUMMARY: 29 errors from 26 contexts (suppressed: 0 from 0)
+==1516== 
+==1516== 1 errors in context 1 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049263: mate_close (matelib.c:102)
+==1516==    by 0x8048E9A: main (main.c:115)
+==1516==  Address 0x423d235 is 21 bytes inside a block of size 69 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049263: mate_close (matelib.c:102)
+==1516==    by 0x8048E9A: main (main.c:115)
+==1516== 
+==1516== 
+==1516== 1 errors in context 2 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049263: mate_close (matelib.c:102)
+==1516==    by 0x8048E9A: main (main.c:115)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 3 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x804978A: mate_call_io (matelib.c:256)
+==1516==    by 0x8048E3B: main (main.c:102)
+==1516==  Address 0x423c265 is 21 bytes inside a block of size 69 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x804978A: mate_call_io (matelib.c:256)
+==1516==    by 0x8048E3B: main (main.c:102)
+==1516== 
+==1516== 
+==1516== 1 errors in context 4 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x804978A: mate_call_io (matelib.c:256)
+==1516==    by 0x8048E3B: main (main.c:102)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 5 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049992: mate_memread (matelib.c:327)
+==1516==    by 0x8048E04: main (main.c:93)
+==1516==  Address 0x423b75d is 21 bytes inside a block of size 63 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049992: mate_memread (matelib.c:327)
+==1516==    by 0x8048E04: main (main.c:93)
+==1516== 
+==1516== 
+==1516== 1 errors in context 6 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049992: mate_memread (matelib.c:327)
+==1516==    by 0x8048E04: main (main.c:93)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 7 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x80498D7: mate_memfree (matelib.c:304)
+==1516==    by 0x8048DD4: main (main.c:89)
+==1516==  Address 0x423ad05 is 21 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x80498D7: mate_memfree (matelib.c:304)
+==1516==    by 0x8048DD4: main (main.c:89)
+==1516== 
+==1516== 
+==1516== 1 errors in context 8 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x80498D7: mate_memfree (matelib.c:304)
+==1516==    by 0x8048DD4: main (main.c:89)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 9 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049842: mate_memalloc (matelib.c:282)
+==1516==    by 0x8048DA8: main (main.c:85)
+==1516==  Address 0x423a2ad is 21 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049842: mate_memalloc (matelib.c:282)
+==1516==    by 0x8048DA8: main (main.c:85)
+==1516== 
+==1516== 
+==1516== 1 errors in context 10 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049842: mate_memalloc (matelib.c:282)
+==1516==    by 0x8048DA8: main (main.c:85)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 11 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x80496A0: mate_sem_destroy (matelib.c:224)
+==1516==    by 0x8048D88: main (main.c:81)
+==1516==  Address 0x423988d is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x80496A0: mate_sem_destroy (matelib.c:224)
+==1516==    by 0x8048D88: main (main.c:81)
+==1516== 
+==1516== 
+==1516== 1 errors in context 12 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x80496A0: mate_sem_destroy (matelib.c:224)
+==1516==    by 0x8048D88: main (main.c:81)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 13 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x804961D: mate_sem_post (matelib.c:200)
+==1516==    by 0x8048D65: main (main.c:77)
+==1516==  Address 0x4238e6d is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x804961D: mate_sem_post (matelib.c:200)
+==1516==    by 0x8048D65: main (main.c:77)
+==1516== 
+==1516== 
+==1516== 1 errors in context 14 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x804961D: mate_sem_post (matelib.c:200)
+==1516==    by 0x8048D65: main (main.c:77)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 15 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x804959A: mate_sem_wait (matelib.c:178)
+==1516==    by 0x8048D42: main (main.c:73)
+==1516==  Address 0x42383ed is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x804959A: mate_sem_wait (matelib.c:178)
+==1516==    by 0x8048D42: main (main.c:73)
+==1516== 
+==1516== 
+==1516== 1 errors in context 16 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x804959A: mate_sem_wait (matelib.c:178)
+==1516==    by 0x8048D42: main (main.c:73)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 17 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049514: mate_sem_init (matelib.c:157)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x42379dd is 21 bytes inside a block of size 64 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049514: mate_sem_init (matelib.c:157)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516== 
+==1516== 
+==1516== 1 errors in context 18 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x4030F40: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049C9E: serializar_instancia (matelib.c:401)
+==1516==    by 0x8049514: mate_sem_init (matelib.c:157)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 19 of 26:
+==1516== Invalid write of size 1
+==1516==    at 0x4030F43: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80494E1: mate_sem_init (matelib.c:153)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d14 is 3 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 20 of 26:
+==1516== Invalid write of size 4
+==1516==    at 0x4030ED2: memcpy (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80494E1: mate_sem_init (matelib.c:153)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d10 is 0 bytes inside a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 1 errors in context 21 of 26:
+==1516== Invalid free() / delete / delete[] / realloc()
+==1516==    at 0x402D358: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8048CFA: main (main.c:65)
+==1516==  Address 0xffffffff is not stack'd, malloc'd or (recently) free'd
+==1516== 
+==1516== 
+==1516== 1 errors in context 22 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CEE: main (main.c:65)
+==1516==  Address 0x4236f68 is 8 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CEE: main (main.c:65)
+==1516== 
+==1516== 
+==1516== 1 errors in context 23 of 26:
+==1516== Invalid free() / delete / delete[] / realloc()
+==1516==    at 0x402D358: free (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8048CBA: main (main.c:59)
+==1516==  Address 0xffffffff is not stack'd, malloc'd or (recently) free'd
+==1516== 
+==1516== 
+==1516== 1 errors in context 24 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CAE: main (main.c:59)
+==1516==  Address 0x42364c8 is 8 bytes inside a block of size 60 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x8049B05: mate_memwrite (matelib.c:363)
+==1516==    by 0x8048CAE: main (main.c:59)
+==1516== 
+==1516== 
+==1516== 1 errors in context 25 of 26:
+==1516== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==1516==    at 0x406B549: send (send.c:35)
+==1516==    by 0x8049E20: serializar_instancia (matelib.c:425)
+==1516==    by 0x80491EC: mate_init (matelib.c:83)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516==  Address 0x4232f88 is 8 bytes inside a block of size 55 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049BD7: serializar_instancia (matelib.c:388)
+==1516==    by 0x80491EC: mate_init (matelib.c:83)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== 
+==1516== 4 errors in context 26 of 26:
+==1516== Invalid read of size 1
+==1516==    at 0x402F383: strlen (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x8049501: mate_sem_init (matelib.c:154)
+==1516==    by 0x8048D1F: main (main.c:69)
+==1516==  Address 0x4232d11 is 0 bytes after a block of size 1 alloc'd
+==1516==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==1516==    by 0x80490C4: mate_init (matelib.c:65)
+==1516==    by 0x8048C36: main (main.c:47)
+==1516== 
+==1516== ERROR SUMMARY: 29 errors from 26 contexts (suppressed: 0 from 0)

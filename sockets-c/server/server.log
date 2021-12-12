@@ -1,0 +1,271 @@
+[DEBUG] 14:14:11:027 SERVER/(10010:10010): Iniciando servidor
+[DEBUG] 14:14:24:865 SERVER/(10017:10017): Iniciando servidor
+[DEBUG] 14:15:26:916 SERVER/(10046:10046): Iniciando servidor
+[DEBUG] 14:15:47:548 SERVER/(10047:10047): Iniciando servidor
+[DEBUG] 14:16:08:676 SERVER/(10052:10052): Iniciando servidor
+[DEBUG] 18:23:04:851 SERVER/(12590:12590): Iniciando servidor
+[INFO] 21:11:29:786 SERVER/(12590:14260): Nueva conexion
+[INFO] 21:11:29:787 SERVER/(12590:14260): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:13:38:692 SERVER/(12590:14402): Nueva conexion
+[INFO] 21:13:38:693 SERVER/(12590:14402): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:19:20:073 SERVER/(12590:14620): Nueva conexion
+[INFO] 21:19:20:074 SERVER/(12590:14620): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:20:05:991 SERVER/(12590:14637): Nueva conexion
+[INFO] 21:20:05:992 SERVER/(12590:14637): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:20:22:001 SERVER/(12590:14650): Nueva conexion
+[INFO] 21:20:22:002 SERVER/(12590:14650): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:20:43:201 SERVER/(12590:14665): Nueva conexion
+[INFO] 21:20:43:202 SERVER/(12590:14665): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:22:42:162 SERVER/(12590:14707): Nueva conexion
+[INFO] 21:22:42:162 SERVER/(12590:14707): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:22:46:916 SERVER/(12590:14720): Nueva conexion
+[INFO] 21:22:46:916 SERVER/(12590:14720): Llegada de un nuevo mensaje con el codigo 1
+[INFO] 21:23:54:633 SERVER/(12590:14748): Nueva conexion
+[INFO] 21:23:54:634 SERVER/(12590:14748): Llegada de un nuevo mensaje con el codigo 1
+[DEBUG] 21:24:23:350 SERVER/(14752:14752): Iniciando servidor
+[DEBUG] 21:26:50:775 SERVER/(14788:14788): Iniciando servidor
+[DEBUG] 21:26:50:776 SERVER/(14788:14788): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 21:27:24:648 SERVER/(14806:14806): Iniciando servidor
+[DEBUG] 21:27:24:649 SERVER/(14806:14806): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 21:28:45:976 SERVER/(14823:14823): Iniciando servidor
+[DEBUG] 21:28:45:977 SERVER/(14823:14823): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 21:29:03:154 SERVER/(14823:14828): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 21:29:03:155 SERVER/(14823:14828): Nueva conexion
+[INFO] 21:29:03:155 SERVER/(14823:14828): Llegada de un nuevo mensaje con el codigo 1
+[DEBUG] 00:56:59:649 SERVER/(14823:16872): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 00:56:59:650 SERVER/(14823:16872): Nueva conexion
+[INFO] 00:56:59:650 SERVER/(14823:16872): Llegada de un nuevo mensaje con el codigo 1
+[DEBUG] 00:57:30:501 SERVER/(16876:16876): Iniciando servidor
+[DEBUG] 00:57:30:502 SERVER/(16876:16876): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 00:58:20:765 SERVER/(16893:16893): Iniciando servidor
+[DEBUG] 00:58:20:766 SERVER/(16893:16893): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 00:58:24:096 SERVER/(16893:16895): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 00:58:24:097 SERVER/(16893:16895): Nueva conexion
+[INFO] 00:58:24:098 SERVER/(16893:16895): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 01:01:44:396 SERVER/(16893:16913): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 01:01:44:396 SERVER/(16893:16913): Nueva conexion
+[INFO] 01:01:44:397 SERVER/(16893:16913): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 01:02:38:320 SERVER/(16939:16939): Iniciando servidor
+[DEBUG] 01:02:38:321 SERVER/(16939:16939): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 01:02:44:404 SERVER/(16939:16942): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 01:02:44:405 SERVER/(16939:16942): Nueva conexion
+[INFO] 01:02:44:405 SERVER/(16939:16942): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 17:23:14:569 SERVER/(22489:22489): Iniciando servidor
+[DEBUG] 17:23:14:571 SERVER/(22489:22489): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 17:23:24:925 SERVER/(22489:22501): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 17:23:24:926 SERVER/(22489:22501): Nueva conexion
+[INFO] 17:23:24:927 SERVER/(22489:22501): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 17:24:24:509 SERVER/(22489:22576): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 17:24:24:510 SERVER/(22489:22576): Nueva conexion
+[INFO] 17:24:24:511 SERVER/(22489:22576): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 18:51:11:378 SERVER/(23859:23859): Iniciando servidor
+[DEBUG] 18:51:11:379 SERVER/(23859:23859): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 18:51:39:628 SERVER/(23859:23886): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 18:51:39:629 SERVER/(23859:23886): Nueva conexion
+[INFO] 18:51:39:629 SERVER/(23859:23886): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 18:52:38:151 SERVER/(23859:23906): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 18:52:38:152 SERVER/(23859:23906): Nueva conexion
+[INFO] 18:52:38:152 SERVER/(23859:23906): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 03:04:44:796 SERVER/(28912:28912): Iniciando servidor
+[DEBUG] 03:04:44:797 SERVER/(28912:28912): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:08:58:648 SERVER/(28912:29048): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:08:58:649 SERVER/(28912:29048): Nueva conexion
+[INFO] 03:08:58:657 SERVER/(28912:29048): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 03:19:14:038 SERVER/(29162:29162): Iniciando servidor
+[DEBUG] 03:19:14:039 SERVER/(29162:29162): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:19:17:254 SERVER/(29164:29164): Iniciando servidor
+[DEBUG] 03:19:17:255 SERVER/(29164:29164): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:19:23:601 SERVER/(29164:29167): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:19:23:602 SERVER/(29164:29167): Nueva conexion
+[INFO] 03:19:23:602 SERVER/(29164:29167): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 03:35:06:027 SERVER/(29986:29986): Iniciando servidor
+[DEBUG] 03:35:06:030 SERVER/(29986:29986): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:35:10:621 SERVER/(29986:29998): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:35:10:622 SERVER/(29986:29998): Nueva conexion
+[INFO] 03:35:10:622 SERVER/(29986:29998): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 03:36:58:879 SERVER/(30032:30032): Iniciando servidor
+[DEBUG] 03:36:58:880 SERVER/(30032:30032): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:37:03:448 SERVER/(30032:30040): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:37:03:449 SERVER/(30032:30040): Nueva conexion
+[INFO] 03:37:03:450 SERVER/(30032:30040): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 03:38:51:890 SERVER/(30065:30065): Iniciando servidor
+[DEBUG] 03:38:51:891 SERVER/(30065:30065): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:38:56:017 SERVER/(30065:30068): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:38:56:018 SERVER/(30065:30068): Nueva conexion
+[INFO] 03:38:56:019 SERVER/(30065:30068): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 03:40:03:760 SERVER/(30095:30095): Iniciando servidor
+[DEBUG] 03:40:03:761 SERVER/(30095:30095): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:40:08:144 SERVER/(30095:30104): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:40:08:146 SERVER/(30095:30104): Nueva conexion
+[INFO] 03:40:08:146 SERVER/(30095:30104): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 03:43:50:995 SERVER/(30179:30179): Iniciando servidor
+[DEBUG] 03:43:50:996 SERVER/(30179:30179): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 03:43:56:420 SERVER/(30179:30181): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 03:43:56:421 SERVER/(30179:30181): Nueva conexion
+[INFO] 03:43:56:422 SERVER/(30179:30181): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:25:16:225 SERVER/(32346:32346): Iniciando servidor
+[DEBUG] 13:25:16:226 SERVER/(32346:32346): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:25:49:316 SERVER/(32346:32352): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:25:49:317 SERVER/(32346:32352): Nueva conexion
+[INFO] 13:25:49:318 SERVER/(32346:32352): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:27:17:820 SERVER/(32374:32374): Iniciando servidor
+[DEBUG] 13:27:17:821 SERVER/(32374:32374): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:27:21:841 SERVER/(32374:32382): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:27:21:841 SERVER/(32374:32382): Nueva conexion
+[INFO] 13:27:21:842 SERVER/(32374:32382): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:28:32:414 SERVER/(32399:32399): Iniciando servidor
+[DEBUG] 13:28:32:416 SERVER/(32399:32399): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:28:39:083 SERVER/(32399:32402): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:28:39:084 SERVER/(32399:32402): Nueva conexion
+[INFO] 13:28:39:085 SERVER/(32399:32402): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:36:42:374 SERVER/(32526:32526): Iniciando servidor
+[DEBUG] 13:36:42:376 SERVER/(32526:32526): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:36:46:237 SERVER/(32526:32528): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:36:46:237 SERVER/(32526:32528): Nueva conexion
+[INFO] 13:36:46:237 SERVER/(32526:32528): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:38:23:402 SERVER/(32555:32555): Iniciando servidor
+[DEBUG] 13:38:23:403 SERVER/(32555:32555): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:38:27:237 SERVER/(32555:32557): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:38:27:238 SERVER/(32555:32557): Nueva conexion
+[INFO] 13:38:27:238 SERVER/(32555:32557): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:42:58:490 SERVER/(32600:32600): Iniciando servidor
+[DEBUG] 13:42:58:491 SERVER/(32600:32600): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:43:02:600 SERVER/(32600:32602): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:43:02:600 SERVER/(32600:32602): Nueva conexion
+[INFO] 13:43:02:601 SERVER/(32600:32602): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:44:34:014 SERVER/(32626:32626): Iniciando servidor
+[DEBUG] 13:44:34:016 SERVER/(32626:32626): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:44:36:882 SERVER/(32626:32628): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:44:36:883 SERVER/(32626:32628): Nueva conexion
+[INFO] 13:44:36:883 SERVER/(32626:32628): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:49:02:169 SERVER/(325:325): Iniciando servidor
+[DEBUG] 13:49:02:171 SERVER/(325:325): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:49:04:494 SERVER/(325:329): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:49:04:495 SERVER/(325:329): Nueva conexion
+[INFO] 13:49:04:495 SERVER/(325:329): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:50:33:849 SERVER/(409:409): Iniciando servidor
+[DEBUG] 13:50:33:850 SERVER/(409:409): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:50:39:261 SERVER/(409:412): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:50:39:261 SERVER/(409:412): Nueva conexion
+[INFO] 13:50:39:262 SERVER/(409:412): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:54:17:264 SERVER/(474:474): Iniciando servidor
+[DEBUG] 13:54:17:267 SERVER/(474:474): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:54:20:090 SERVER/(474:476): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:54:20:097 SERVER/(474:476): Nueva conexion
+[INFO] 13:54:20:098 SERVER/(474:476): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:58:34:714 SERVER/(511:511): Iniciando servidor
+[DEBUG] 13:58:34:715 SERVER/(511:511): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 13:58:37:707 SERVER/(511:513): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:58:37:707 SERVER/(511:513): Nueva conexion
+[INFO] 13:58:37:708 SERVER/(511:513): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 13:58:50:401 SERVER/(511:517): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 13:58:50:403 SERVER/(511:517): Nueva conexion
+[INFO] 13:58:50:404 SERVER/(511:517): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:39:11:495 SERVER/(511:1466): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:39:11:496 SERVER/(511:1466): Nueva conexion
+[INFO] 14:39:11:496 SERVER/(511:1466): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:39:12:061 SERVER/(511:1470): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:39:12:062 SERVER/(511:1470): Nueva conexion
+[INFO] 14:39:12:062 SERVER/(511:1470): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:40:37:360 SERVER/(511:1483): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:40:37:361 SERVER/(511:1483): Nueva conexion
+[INFO] 14:40:37:361 SERVER/(511:1483): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:40:41:075 SERVER/(1485:1485): Iniciando servidor
+[DEBUG] 14:40:41:077 SERVER/(1485:1485): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 14:40:44:827 SERVER/(1507:1507): Iniciando servidor
+[DEBUG] 14:40:44:829 SERVER/(1507:1507): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 14:40:48:422 SERVER/(1507:1509): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:40:48:422 SERVER/(1507:1509): Nueva conexion
+[INFO] 14:40:48:422 SERVER/(1507:1509): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:41:20:728 SERVER/(1507:1517): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:41:20:729 SERVER/(1507:1517): Nueva conexion
+[INFO] 14:41:20:741 SERVER/(1507:1517): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:41:27:507 SERVER/(1530:1530): Iniciando servidor
+[DEBUG] 14:41:27:508 SERVER/(1530:1530): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 14:41:32:163 SERVER/(1530:1532): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:41:32:164 SERVER/(1530:1532): Nueva conexion
+[INFO] 14:41:32:165 SERVER/(1530:1532): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:42:36:138 SERVER/(1530:1556): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:42:36:139 SERVER/(1530:1556): Nueva conexion
+[INFO] 14:42:36:139 SERVER/(1530:1556): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:44:30:251 SERVER/(1530:1625): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:44:30:252 SERVER/(1530:1625): Nueva conexion
+[INFO] 14:44:30:252 SERVER/(1530:1625): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 14:50:48:983 SERVER/(1906:1906): Iniciando servidor
+[DEBUG] 14:50:48:984 SERVER/(1906:1906): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 14:50:56:755 SERVER/(1906:1910): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:50:56:757 SERVER/(1906:1910): Nueva conexion
+[INFO] 14:50:56:767 SERVER/(1906:1910): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 14:51:34:336 SERVER/(1916:1916): Iniciando servidor
+[DEBUG] 14:51:34:339 SERVER/(1916:1916): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 14:51:41:258 SERVER/(1916:1918): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:51:41:260 SERVER/(1916:1918): Nueva conexion
+[INFO] 14:51:41:261 SERVER/(1916:1918): Llegada de un nuevo mensaje con el codigo 1
+
+[DEBUG] 14:58:38:078 SERVER/(1966:1966): Iniciando servidor
+[DEBUG] 14:58:38:079 SERVER/(1966:1966): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 14:58:52:306 SERVER/(1966:1980): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 14:58:52:307 SERVER/(1966:1980): Nueva conexion
+[INFO] 14:58:52:307 SERVER/(1966:1980): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 15:01:48:128 SERVER/(1966:2010): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 15:01:48:128 SERVER/(1966:2010): Nueva conexion
+[INFO] 15:01:48:129 SERVER/(1966:2010): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 15:05:18:897 SERVER/(2044:2044): Iniciando servidor
+[DEBUG] 15:05:18:899 SERVER/(2044:2044): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 15:05:29:375 SERVER/(2044:2058): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 15:05:29:376 SERVER/(2044:2058): Nueva conexion
+[INFO] 15:05:29:376 SERVER/(2044:2058): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 12:26:00:423 SERVER/(15633:15633): Iniciando servidor
+[DEBUG] 12:26:00:429 SERVER/(15633:15633): Estoy a la espera en ip: 127.0.0.1, puerto: 6009
+[DEBUG] 12:26:08:387 SERVER/(15633:15654): Llego cliente a ip: 127.0.0.1, puerto: 6009
+[INFO] 12:26:08:397 SERVER/(15633:15654): Nueva conexion
+[INFO] 12:26:08:398 SERVER/(15633:15654): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 16:08:33:804 SERVER/(11514:11514): Iniciando servidor
+[DEBUG] 16:08:33:805 SERVER/(11514:11514): Estoy a la espera en ip: 127.0.0.1, puerto: 5099
+[DEBUG] 16:08:36:400 SERVER/(11514:11517): Llego cliente a ip: 127.0.0.1, puerto: 5099
+[INFO] 16:08:36:401 SERVER/(11514:11517): Nueva conexion
+[INFO] 16:08:36:402 SERVER/(11514:11517): Llegada de un nuevo mensaje con el codigo 2
+
+[DEBUG] 16:08:36:403 SERVER/(11514:11516): Llego cliente a ip: 127.0.0.1, puerto: 5099
+[INFO] 16:08:36:406 SERVER/(11514:11516): Nueva conexion
+[INFO] 16:08:36:406 SERVER/(11514:11516): Llegada de un nuevo mensaje con el codigo 2
+

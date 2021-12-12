@@ -1,0 +1,75 @@
+[INFO] 12:30:05:050 Servidor/(12038:12038): Servidor listo para recibir al cliente
+[INFO] 12:30:05:055 Servidor/(12038:12043): Planificador de Largo Plazo iniciado
+[INFO] 23:01:45:876 Servidor/(9027:9027): Servidor listo para recibir al cliente
+[INFO] 23:01:45:882 Servidor/(9027:9039): Planificador de Largo Plazo iniciado
+[INFO] 23:01:55:764 Servidor/(9027:9027): Se conecto un cliente!
+[INFO] 23:01:55:773 Servidor/(9027:9027): Transaccion iniciada
+
+[INFO] 23:01:55:774 Servidor/(9027:9027): -1217415248
+[INFO] 23:01:55:776 Servidor/(9027:9027): (null)
+[INFO] 23:03:54:062 Servidor/(8874:8874): Servidor listo para recibir al cliente
+[INFO] 23:03:54:064 Servidor/(8874:9298): Planificador de Largo Plazo iniciado
+[INFO] 23:04:15:135 Servidor/(8874:8874): Se conecto un cliente!
+[INFO] 23:04:22:790 Servidor/(8874:8874): Transaccion iniciada
+
+[INFO] 23:04:52:802 Servidor/(8874:8874): -1217615952
+[INFO] 23:04:54:374 Servidor/(8874:8874): (null)
+[INFO] 23:07:15:247 Servidor/(9684:9684): Servidor listo para recibir al cliente
+[INFO] 23:07:15:252 Servidor/(9684:9690): Planificador de Largo Plazo iniciado
+[INFO] 23:09:11:271 Servidor/(9897:9897): Servidor listo para recibir al cliente
+[INFO] 23:09:11:272 Servidor/(9897:9906): Planificador de Largo Plazo iniciado
+[INFO] 22:07:37:633 Servidor/(24710:24710): Servidor listo para recibir al cliente
+[INFO] 22:07:37:637 Servidor/(24710:24715): Planificador de Largo Plazo iniciado
+[INFO] 22:08:21:241 Servidor/(24792:24792): Servidor listo para recibir al cliente
+[INFO] 22:08:21:242 Servidor/(24792:24802): Planificador de Largo Plazo iniciado
+[INFO] 22:08:31:944 Servidor/(24671:24822): Planificador de Largo Plazo iniciado
+[INFO] 22:08:31:944 Servidor/(24671:24671): Servidor listo para recibir al cliente
+[INFO] 15:57:47:977 Servidor/(7812:7846): Planificador de Largo Plazo iniciado
+[INFO] 15:57:47:978 Servidor/(7812:7847): Algoritmo SJF Sin Desalojo Iniciado
+[INFO] 15:57:47:978 Servidor/(7812:7848): Iniciado el hilo para finalizar procesos
+[INFO] 15:57:47:982 Servidor/(7812:7849): Iniciado el planificador de IO
+[INFO] 15:57:47:988 Servidor/(7812:7812): Creada la CPU 0
+[INFO] 15:57:47:989 Servidor/(7812:7850): CPU Creada
+[INFO] 15:57:48:024 Servidor/(7812:7812): Creada la CPU 1
+[INFO] 15:57:48:025 Servidor/(7812:7851): CPU Creada
+[INFO] 15:57:48:026 Servidor/(7812:7812): Creada la CPU 2
+[INFO] 15:57:48:038 Servidor/(7812:7852): CPU Creada
+[INFO] 15:57:48:044 Servidor/(7812:7812): Creada la CPU 3
+[INFO] 15:57:48:045 Servidor/(7812:7853): CPU Creada
+[INFO] 15:57:48:047 Servidor/(7812:7812): Creada la CPU 4
+[INFO] 15:57:48:047 Servidor/(7812:7854): CPU Creada
+[INFO] 15:57:48:050 Servidor/(7812:7812): Creada la CPU 5
+[INFO] 15:57:48:050 Servidor/(7812:7855): CPU Creada
+[INFO] 15:57:48:059 Servidor/(7812:7812): Creada la CPU 6
+[INFO] 15:57:48:060 Servidor/(7812:7856): CPU Creada
+[INFO] 15:57:48:061 Servidor/(7812:7812): Creada la CPU 7
+[INFO] 15:57:48:061 Servidor/(7812:7812): Servidor listo para recibir al cliente
+[INFO] 15:57:48:061 Servidor/(7812:7812): Creado recurso de IO laguna
+[INFO] 15:57:48:061 Servidor/(7812:7812): Creado recurso de IO hierbitas
+[INFO] 15:57:48:061 Servidor/(7812:7812): Dispositivos IO Creados
+[INFO] 15:57:48:061 Servidor/(7812:7857): CPU Creada
+[INFO] 15:58:06:011 Servidor/(7812:7812): Se conecto un cliente!
+[INFO] 15:58:06:016 Servidor/(7812:7812): PID 7887: Llegó un carpincho
+[INFO] 15:58:06:017 Servidor/(7812:7846): Proceso en Ready
+[INFO] 15:58:06:017 Servidor/(7812:7847): Se Paso el Proceso 7887 a EXEC para Ejecutar
+[INFO] 15:58:06:017 Servidor/(7812:7850): Iniciando Ejecucion PID 7887
+[INFO] 15:58:06:018 Servidor/(7812:7850): PID 7887: Me llegó una operación de Memoria.
+[INFO] 15:58:07:019 Servidor/(7812:7850): PID 7887: Me llegó una operación de Memoria.
+[INFO] 15:58:08:021 Servidor/(7812:7850): PID 7887: Me llegó una operación de Semáforo.
+[INFO] 15:58:08:021 Servidor/(7812:7850): Creado el semaforo sem1
+[INFO] 15:58:08:344 Servidor/(7812:7812): Se conecto un cliente!
+[INFO] 15:58:08:345 Servidor/(7812:7812): PID 7893: Llegó un carpincho
+[INFO] 15:58:08:345 Servidor/(7812:7846): Proceso en Ready
+[INFO] 15:58:08:345 Servidor/(7812:7847): Se Paso el Proceso 7893 a EXEC para Ejecutar
+[INFO] 15:58:08:345 Servidor/(7812:7851): Iniciando Ejecucion PID 7893
+[INFO] 15:58:08:346 Servidor/(7812:7851): PID 7893: Me llegó una operación de Memoria.
+[INFO] 15:58:09:022 Servidor/(7812:7850): PID 7887: Me llegó una operación de Semáforo.
+[INFO] 15:58:09:023 Servidor/(7812:7850): Realizado sem_wait al semaforo sem1
+[INFO] 15:58:09:347 Servidor/(7812:7851): PID 7893: Me llegó una operación de Memoria.
+[INFO] 15:58:10:024 Servidor/(7812:7850): PID 7887: Me llegó una operación de Semáforo.
+[INFO] 15:58:37:622 Servidor/(7812:7851): PID 7893: Me llegó una operación de Semáforo.
+[ERROR] 15:58:37:622 Servidor/(7812:7851): El semaforo sem1 ya existe
+[INFO] 15:58:57:023 Servidor/(7812:7851): PID 7893: Me llegó una operación de Semáforo.
+[ERROR] 15:58:57:024 Servidor/(7812:7851): No se puede realizar sem_wait al semaforo sem1
+[INFO] 15:59:18:101 Servidor/(7812:7851): PID 7893: Me llegó una operación de Semáforo.
+[INFO] 15:59:36:630 Servidor/(7812:7850): Realizado sem_post al semaforo sem1

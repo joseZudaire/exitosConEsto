@@ -1,0 +1,1246 @@
+==9257== Memcheck, a memory error detector
+==9257== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==9257== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==9257== Command: ./swamp-v2
+==9257== Parent PID: 4298
+==9257== 
+--9257-- 
+--9257-- Valgrind options:
+--9257--    --show-leak-kinds=all
+--9257--    --leak-check=full
+--9257--    -v
+--9257--    --log-file=algo2
+--9257-- Contents of /proc/version:
+--9257--   Linux version 4.4.0-116-generic (buildd@lgw01-amd64-023) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9) ) #140-Ubuntu SMP Mon Feb 12 21:22:43 UTC 2018
+--9257-- 
+--9257-- Arch and hwcaps: X86, LittleEndian, x86-mmxext-sse1-sse2-sse3-lzcnt
+--9257-- Page sizes: currently 4096, max supported 4096
+--9257-- Valgrind library directory: /usr/lib/valgrind
+--9257-- Reading syms from /lib/i386-linux-gnu/ld-2.23.so
+--9257--   Considering /lib/i386-linux-gnu/ld-2.23.so ..
+--9257--   .. CRC mismatch (computed 596cb2b8 wanted 417b32cc)
+--9257--   Considering /usr/lib/debug/lib/i386-linux-gnu/ld-2.23.so ..
+--9257--   .. CRC is valid
+--9257-- Reading syms from /home/utnso/paraAilen/tp-2021-2c-SO_ftw/swamp-v2/Debug/swamp-v2
+--9257-- Reading syms from /usr/lib/valgrind/memcheck-x86-linux
+--9257--   Considering /usr/lib/valgrind/memcheck-x86-linux ..
+--9257--   .. CRC mismatch (computed 6036da3f wanted 652e483f)
+--9257--    object doesn't have a symbol table
+--9257--    object doesn't have a dynamic symbol table
+--9257-- Scheduler: using generic scheduler lock implementation.
+--9257-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==9257== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-9257-by-utnso-on-???
+==9257== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-9257-by-utnso-on-???
+==9257== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-9257-by-utnso-on-???
+==9257== 
+==9257== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==9257== don't want to do, unless you know exactly what you're doing,
+==9257== or are doing some strange experiment):
+==9257==   /usr/lib/valgrind/../../bin/vgdb --pid=9257 ...command...
+==9257== 
+==9257== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==9257==   /path/to/gdb ./swamp-v2
+==9257== and then give GDB the following command
+==9257==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=9257
+==9257== --pid is optional if only one valgrind process is running
+==9257== 
+--9257-- REDIR: 0x4018eb0 (ld-linux.so.2:strlen) redirected to 0x380490f2 (???)
+--9257-- REDIR: 0x4018c70 (ld-linux.so.2:index) redirected to 0x380490cd (???)
+--9257-- Reading syms from /usr/lib/valgrind/vgpreload_core-x86-linux.so
+--9257--   Considering /usr/lib/valgrind/vgpreload_core-x86-linux.so ..
+--9257--   .. CRC mismatch (computed 5b95c0c4 wanted 39e79efa)
+--9257--    object doesn't have a symbol table
+--9257-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so
+--9257--   Considering /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so ..
+--9257--   .. CRC mismatch (computed 4d5a1526 wanted 33571d5b)
+--9257--    object doesn't have a symbol table
+==9257== WARNING: new redirection conflicts with existing -- ignoring it
+--9257--     old: 0x04018eb0 (strlen              ) R-> (0000.0) 0x380490f2 ???
+--9257--     new: 0x04018eb0 (strlen              ) R-> (2007.0) 0x0402f410 strlen
+--9257-- Reading syms from /usr/lib/libcommons.so
+--9257-- Reading syms from /lib/i386-linux-gnu/libpthread-2.23.so
+--9257--   Considering /usr/lib/debug/.build-id/12/78da59ecc0791dce5c44d8b8756a0480be3a5b.debug ..
+--9257--   .. build-id is valid
+--9257-- Reading syms from /lib/i386-linux-gnu/libc-2.23.so
+--9257--   Considering /lib/i386-linux-gnu/libc-2.23.so ..
+--9257--   .. CRC mismatch (computed af9c0474 wanted a5de3f2a)
+--9257--   Considering /usr/lib/debug/lib/i386-linux-gnu/libc-2.23.so ..
+--9257--   .. CRC is valid
+--9257-- REDIR: 0x40f04b0 (libc.so.6:strncasecmp) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x40f7140 (libc.so.6:memrchr) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x4109b20 (libc.so.6:wcslen) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x40ef350 (libc.so.6:strstr) redirected to 0x4033700 (strstr)
+--9257-- REDIR: 0x40ee7e0 (libc.so.6:__GI_strrchr) redirected to 0x402ee00 (__GI_strrchr)
+--9257-- REDIR: 0x40e9f00 (libc.so.6:malloc) redirected to 0x402c110 (malloc)
+--9257-- REDIR: 0x40ee5c0 (libc.so.6:__GI_strlen) redirected to 0x402f390 (__GI_strlen)
+--9257-- REDIR: 0x40f0680 (libc.so.6:__GI_memcpy) redirected to 0x4030fb0 (__GI_memcpy)
+--9257-- REDIR: 0x40ea810 (libc.so.6:calloc) redirected to 0x402e010 (calloc)
+--9257-- REDIR: 0x40ee750 (libc.so.6:strncpy) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x40f8dc0 (libc.so.6:__strncpy_ssse3) redirected to 0x402f5f0 (strncpy)
+--9257-- REDIR: 0x40ea520 (libc.so.6:realloc) redirected to 0x402e250 (realloc)
+--9257-- REDIR: 0x40ee580 (libc.so.6:strlen) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x40f7440 (libc.so.6:__strlen_sse2_bsf) redirected to 0x402f370 (strlen)
+--9257-- REDIR: 0x40ee700 (libc.so.6:strncmp) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x41ae5c0 (libc.so.6:__strncmp_ssse3) redirected to 0x402fab0 (strncmp)
+--9257-- REDIR: 0x40ea470 (libc.so.6:free) redirected to 0x402d2f0 (free)
+--9257-- REDIR: 0x40f2280 (libc.so.6:strchrnul) redirected to 0x40330b0 (strchrnul)
+--9257-- REDIR: 0x40f00d0 (libc.so.6:__GI_mempcpy) redirected to 0x40332c0 (__GI_mempcpy)
+--9257-- REDIR: 0x40edae0 (libc.so.6:strcat) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x4102b30 (libc.so.6:__strcat_ssse3) redirected to 0x402f030 (strcat)
+--9257-- REDIR: 0x40f0610 (libc.so.6:memcpy) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x41a0b70 (libc.so.6:__memcpy_ssse3) redirected to 0x4030cc0 (memcpy)
+--9257-- REDIR: 0x40efc10 (libc.so.6:__GI_memcmp) redirected to 0x4031ef0 (__GI_memcmp)
+--9257-- REDIR: 0x40f21b0 (libc.so.6:__GI___rawmemchr) redirected to 0x4033110 (__GI___rawmemchr)
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+--9257-- REDIR: 0x40effc0 (libc.so.6:memset) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x419e4d0 (libc.so.6:__memset_sse2) redirected to 0x40327d0 (memset)
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+--9257-- REDIR: 0x40edee0 (libc.so.6:strcmp) redirected to 0x4026560 (_vgnU_ifunc_wrapper)
+--9257-- REDIR: 0x41ad150 (libc.so.6:__strcmp_ssse3) redirected to 0x4030450 (strcmp)
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+--9257-- REDIR: 0x40efa30 (libc.so.6:__GI_memchr) redirected to 0x40306d0 (__GI_memchr)
+==9257== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==9257==    at 0x406B549: send (send.c:35)
+==9257==    by 0x804A27E: leer_swap (swamp.c:527)
+==9257==    by 0x8049404: server_procesar_mensaje (swamp.c:81)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257==  Address 0x42678d8 is 64 bytes inside a block of size 76 alloc'd
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x804A201: leer_swap (swamp.c:517)
+==9257==    by 0x8049404: server_procesar_mensaje (swamp.c:81)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== Process terminating with default action of signal 2 (SIGINT)
+==9257==    at 0x406B389: recv (recv.c:35)
+==9257==    by 0x8049276: recibir_cod_op (swamp.c:37)
+==9257==    by 0x80492EB: server_atender_cliente (swamp.c:51)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== HEAP SUMMARY:
+==9257==     in use at exit: 12,536 bytes in 429 blocks
+==9257==   total heap usage: 1,001 allocs, 572 frees, 173,581 bytes allocated
+==9257== 
+==9257== Searching for pointers to 429 not-freed blocks
+==9257== Checked 99,268 bytes
+==9257== 
+==9257== 6 bytes in 1 blocks are still reachable in loss record 1 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40EE2C5: strdup (strdup.c:42)
+==9257==    by 0x40544A7: string_duplicate (in /usr/lib/libcommons.so)
+==9257==    by 0x4054049: log_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048E9D: iniciar_logger (lib.c:7)
+==9257==    by 0x804911A: main (main.c:7)
+==9257== 
+==9257== 8 bytes in 1 blocks are still reachable in loss record 2 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40572A4: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 8 bytes in 1 blocks are still reachable in loss record 3 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40553FE: list_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8049EF9: iniciar_marcos (swamp.c:432)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 8 bytes in 1 blocks are still reachable in loss record 4 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40553FE: list_create (in /usr/lib/libcommons.so)
+==9257==    by 0x80491F9: iniciar_carpinchos (swamp.c:18)
+==9257==    by 0x8049179: iniciar_servidor (swamp.c:8)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 12 bytes in 1 blocks are still reachable in loss record 5 of 20
+==9257==    at 0x402E2CC: realloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40551D2: _string_array_push (in /usr/lib/libcommons.so)
+==9257==    by 0x4055185: _string_split (in /usr/lib/libcommons.so)
+==9257==    by 0x40549FA: string_split (in /usr/lib/libcommons.so)
+==9257==    by 0x4054B1C: string_get_string_as_array (in /usr/lib/libcommons.so)
+==9257==    by 0x40574D1: config_get_array_value (in /usr/lib/libcommons.so)
+==9257==    by 0x8048F95: read_and_log_config (lib.c:24)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 13 bytes in 1 blocks are still reachable in loss record 6 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40EE2C5: strdup (strdup.c:42)
+==9257==    by 0x40572B8: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 16 bytes in 1 blocks are still reachable in loss record 7 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40568F3: dictionary_create (in /usr/lib/libcommons.so)
+==9257==    by 0x40572C7: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 20 bytes in 1 blocks are still reachable in loss record 8 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x4053FA3: log_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048E9D: iniciar_logger (lib.c:7)
+==9257==    by 0x804911A: main (main.c:7)
+==9257== 
+==9257== 32 bytes in 4 blocks are still reachable in loss record 9 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x4056671: list_create_element (in /usr/lib/libcommons.so)
+==9257==    by 0x405548E: list_add (in /usr/lib/libcommons.so)
+==9257==    by 0x804A0BE: recibirPagina (swamp.c:477)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 40 bytes in 1 blocks are still reachable in loss record 10 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x8048F08: read_and_log_config (lib.c:19)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 48 bytes in 4 blocks are still reachable in loss record 11 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x804A088: recibirPagina (swamp.c:471)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 80 bytes in 1 blocks are still reachable in loss record 12 of 20
+==9257==    at 0x402E0B8: calloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x4056914: dictionary_create (in /usr/lib/libcommons.so)
+==9257==    by 0x40572C7: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 86 bytes in 8 blocks are still reachable in loss record 13 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40EE2C5: strdup (strdup.c:42)
+==9257==    by 0x4056A29: dictionary_put (in /usr/lib/libcommons.so)
+==9257==    by 0x40571E4: add_cofiguration.2925 (in /usr/lib/libcommons.so)
+==9257==    by 0x4054C4C: string_iterate_lines (in /usr/lib/libcommons.so)
+==9257==    by 0x4057355: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 128 bytes in 8 blocks are still reachable in loss record 14 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x4056F00: dictionary_create_element (in /usr/lib/libcommons.so)
+==9257==    by 0x4056A3B: dictionary_put (in /usr/lib/libcommons.so)
+==9257==    by 0x40571E4: add_cofiguration.2925 (in /usr/lib/libcommons.so)
+==9257==    by 0x4054C4C: string_iterate_lines (in /usr/lib/libcommons.so)
+==9257==    by 0x4057355: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 130 bytes in 2 blocks are still reachable in loss record 15 of 20
+==9257==    at 0x402E2CC: realloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x405486B: string_trim_right (in /usr/lib/libcommons.so)
+==9257==    by 0x4054761: string_trim (in /usr/lib/libcommons.so)
+==9257==    by 0x4054B43: string_get_string_as_array (in /usr/lib/libcommons.so)
+==9257==    by 0x40574D1: config_get_array_value (in /usr/lib/libcommons.so)
+==9257==    by 0x8048F95: read_and_log_config (lib.c:24)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 165 bytes in 8 blocks are still reachable in loss record 16 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40EE2C5: strdup (strdup.c:42)
+==9257==    by 0x40544A7: string_duplicate (in /usr/lib/libcommons.so)
+==9257==    by 0x4055172: _string_split (in /usr/lib/libcommons.so)
+==9257==    by 0x4054A9E: string_n_split (in /usr/lib/libcommons.so)
+==9257==    by 0x40571C1: add_cofiguration.2925 (in /usr/lib/libcommons.so)
+==9257==    by 0x4054C4C: string_iterate_lines (in /usr/lib/libcommons.so)
+==9257==    by 0x4057355: config_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048ED2: read_and_log_config (lib.c:13)
+==9257==    by 0x8049115: main (main.c:6)
+==9257== 
+==9257== 344 bytes in 1 blocks are still reachable in loss record 17 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x40D7359: __fopen_internal (iofopen.c:69)
+==9257==    by 0x40D741D: fopen@@GLIBC_2.1 (iofopen.c:97)
+==9257==    by 0x4053EDA: txt_open_for_append (in /usr/lib/libcommons.so)
+==9257==    by 0x4053FE3: log_create (in /usr/lib/libcommons.so)
+==9257==    by 0x8048E9D: iniciar_logger (lib.c:7)
+==9257==    by 0x804911A: main (main.c:7)
+==9257== 
+==9257== 1,024 bytes in 128 blocks are still reachable in loss record 18 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x4056671: list_create_element (in /usr/lib/libcommons.so)
+==9257==    by 0x405548E: list_add (in /usr/lib/libcommons.so)
+==9257==    by 0x8049FC4: iniciar_marcos (swamp.c:442)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 2,048 bytes in 128 blocks are still reachable in loss record 19 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x8049F20: iniciar_marcos (swamp.c:437)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 8,320 bytes in 128 blocks are still reachable in loss record 20 of 20
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x8049F59: iniciar_marcos (swamp.c:439)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== LEAK SUMMARY:
+==9257==    definitely lost: 0 bytes in 0 blocks
+==9257==    indirectly lost: 0 bytes in 0 blocks
+==9257==      possibly lost: 0 bytes in 0 blocks
+==9257==    still reachable: 12,536 bytes in 429 blocks
+==9257==         suppressed: 0 bytes in 0 blocks
+==9257== 
+==9257== Use --track-origins=yes to see where uninitialised values come from
+==9257== ERROR SUMMARY: 1711 errors from 43 contexts (suppressed: 0 from 0)
+==9257== 
+==9257== 1 errors in context 1 of 43:
+==9257== Syscall param socketcall.send(msg) points to uninitialised byte(s)
+==9257==    at 0x406B549: send (send.c:35)
+==9257==    by 0x804A27E: leer_swap (swamp.c:527)
+==9257==    by 0x8049404: server_procesar_mensaje (swamp.c:81)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257==  Address 0x42678d8 is 64 bytes inside a block of size 76 alloc'd
+==9257==    at 0x402C17C: malloc (in /usr/lib/valgrind/vgpreload_memcheck-x86-linux.so)
+==9257==    by 0x804A201: leer_swap (swamp.c:517)
+==9257==    by 0x8049404: server_procesar_mensaje (swamp.c:81)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 1 errors in context 2 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 1 errors in context 3 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 1 errors in context 4 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 1 errors in context 5 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 1 errors in context 6 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 1 errors in context 7 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049805: crear_archivos (swamp.c:213)
+==9257==    by 0x804916F: iniciar_servidor (swamp.c:6)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 3 errors in context 8 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 3 errors in context 9 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 3 errors in context 10 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 3 errors in context 11 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 3 errors in context 12 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 3 errors in context 13 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049FE0: iniciar_marcos (swamp.c:434)
+==9257==    by 0x8049174: iniciar_servidor (swamp.c:7)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 14 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 15 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 16 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 17 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 18 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 19 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A0A5: recibirPagina (swamp.c:475)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 20 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 21 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 22 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 23 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 24 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 4 errors in context 25 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x804A522: archivoConMasEspacio (swamp.c:594)
+==9257==    by 0x804A06D: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 5 errors in context 26 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 5 errors in context 27 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 5 errors in context 28 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 5 errors in context 29 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 5 errors in context 30 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 5 errors in context 31 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049388: server_procesar_mensaje (swamp.c:72)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 32 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 33 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 34 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 35 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 36 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 37 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x80499B0: escribir_swap (swamp.c:246)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 38 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF893: strtok (strtok.S:210)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 39 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF86F: strtok (strtok.S:189)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 40 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF847: strtok (strtok.S:163)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 41 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF807: strtok (strtok.S:122)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 42 of 43:
+==9257== Conditional jump or move depends on uninitialised value(s)
+==9257==    at 0x40EF884: strtok (strtok.S:199)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== 
+==9257== 134 errors in context 43 of 43:
+==9257== Use of uninitialised value of size 4
+==9257==    at 0x40EF881: strtok (strtok.S:198)
+==9257==    by 0x804A73A: obtenerCantArchivos (swamp.c:640)
+==9257==    by 0x8049EC1: hayEspacioArchivo (swamp.c:414)
+==9257==    by 0x804A076: recibirPagina (swamp.c:470)
+==9257==    by 0x8049966: escribir_swap (swamp.c:239)
+==9257==    by 0x804943D: server_procesar_mensaje (swamp.c:88)
+==9257==    by 0x8049317: server_atender_cliente (swamp.c:56)
+==9257==    by 0x804923E: server_aceptar_clientes (swamp.c:28)
+==9257==    by 0x80491E8: iniciar_servidor (swamp.c:14)
+==9257==    by 0x8049135: main (main.c:10)
+==9257== 
+==9257== ERROR SUMMARY: 1711 errors from 43 contexts (suppressed: 0 from 0)
